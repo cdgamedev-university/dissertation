@@ -1,9 +1,11 @@
 \documentclass{article}
 
+\usepackage{multicol}
 \usepackage[style=numeric, sorting=none, defernumbers=true]{biblatex}
+
 \addbibresource{references.bib}
 
-\title{Comparing methods of automatically detecting fraudulent peer-to-peer transactions in massively multiplayer online economies.}
+\title{The automated detection of fraudulent peer-to-peer transactions in massively multiplayer online economies.}
 \author{Hayley Davies - 1902055}
 \date{2022}
 
@@ -13,8 +15,11 @@
         \maketitle
 \end{titlepage}
 
-\section{Introduction}
-Real-Money Trading (RMT) is the method of buying and selling virtual items and currency within massively multiplayer online (MMO) video games. It often violate the games' Terms of Service or Code of Conduct and is therefore often a bannable offense within the respective game.\cite{AmazonGamesCOC}\cite{SquareEnixCOC}
+\begin{multicols}{2}
+    [
+        \section{Introduction}
+        Real-Money Trading (RMT) is the method of buying and selling virtual items and currency within massively multiplayer online (MMO) video games. It often violate the games' Terms of Service or Code of Conduct and is therefore often a bannable offense within the respective game.\cite{AmazonGamesCOC}\cite{SquareEnixCOC}
+    ]
 
 Fujita et al. state that RMT is a harmful practive to both the game's economy and players due to it revolving around other illicit activity such as cheating, botting or stealing user accounts. They continue to state that this also impacts the game by pushing away legitimate players who become frustrated with the problems and can cause a lack new players based on what they have heard.\cite{Fujita2011}
 
@@ -38,6 +43,8 @@ Detecting RMT requires the use of anomaly detection. Ahmed et al. discuss the ty
 \section{Reflective Addendum}
 
 \section{Appendices}
+
+\end{multicols}
 
 \medskip
 
