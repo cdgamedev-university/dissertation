@@ -153,6 +153,9 @@ For this research, an anomaly detection algorithm would utilize 4 factors; Level
 \subsection{Internal Data}
 \noindent The best method of gathering data, is to contact the developers directly. The developer's internal policy could impact the ability to get the raw data from them directly. They may log a lot more data than is publicly accessible via the marketplace, for example, the internal data could contain account identifying information.
 
+\subsection{Public Data}
+\noindent In Korea, a public resource exist which allows users to view trasactional data across the entire auction house\cite{LostArkStove2019}. However, this website is inaccessible without name and age verification, due Korea's Game Industry Promotion Act\cite{GIPA2020kr}.
+
 \subsection{In-game Data}
 \noindent Another method for data collection surrounds screenshotting pages from the Sale History of Gems from Lost Ark's Marketplace, as seen in Figure \ref{figure:auction-house-before}. Then, the screenshot is cropped to remove the Gem Name, Starting Bid and Quality fields and converted to a greyscale image along with other image manipulation techniques to ensure clear text, shown in Figure \ref{figure:auction-house-after} (see Algorithm \ref{algorithm:image-formatter}).
 
@@ -194,8 +197,7 @@ This method, however, suffers from a problem where anomalies which aren't detect
 \noindent 
 
 \subsection{Ethical}
-\noindent This paper follows the Nuremberg Code\cite{Nuremberg1947}.
-The data being processed is gathered directly from the Lost Ark marketplace and doesn't contain any personally identifiable information which can be tied back to the user.
+\noindent The data processed in the paper is gathered directly from Lost Ark's public marketplace where Smilegate already follow data anomyization practices\cite{Gruschka2018}. The data gathered doesn't contain identifiable information and therefore conforms to both General Data Protection Regulation (GDPR) and the Nuremberg Code\cite{Nuremberg1947}.
 
 \subsection{Professional}
 \noindent 
