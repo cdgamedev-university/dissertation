@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber dissertation-1902055"] 1670530743 "dissertation-1902055.bcf" "dissertation-1902055.bbl" "dissertation-1902055" 1672777081
-  "dissertation-1902055.bcf" 1672777081 109624 76ece57d6df165fda728a438902fa253 "pdflatex"
+["biber dissertation-1902055"] 1670530743 "dissertation-1902055.bcf" "dissertation-1902055.bbl" "dissertation-1902055" 1678186718
+  "dissertation-1902055.bcf" 1678186717 109624 76ece57d6df165fda728a438902fa253 "pdflatex"
   "references.bib" 1670530699 35422 6d0b89d66d0543ef4bf80896cdb0340a ""
   (generated)
-  "dissertation-1902055.blg"
   "dissertation-1902055.bbl"
-["pdflatex"] 1672777077 "d:/1902055-comp3xx-dissertation/dissertation-1902055.tex" "d:/1902055-comp3xx-dissertation/dissertation-1902055.pdf" "dissertation-1902055" 1672777081
+  "dissertation-1902055.blg"
+["pdflatex"] 1678186714 "d:/1902055-comp3xx-dissertation/dissertation-1902055.tex" "d:/1902055-comp3xx-dissertation/dissertation-1902055.pdf" "dissertation-1902055" 1678186718
   "C:/Users/Hayley/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1602517156 10258310 ddcd5ba0abc6eedad9bef1de65437854 ""
   "C:/Users/Hayley/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1670470277 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -139,21 +139,21 @@
   "algorithms/detect-anomalies.py" 1670429632 612 c58fcca4d1030084455704c4c3bad2be ""
   "algorithms/image-formatter.py" 1670493945 2232 0b8d503e482c114fc660606c225760b7 ""
   "algorithms/image-processor.py" 1670494260 4210 817b5101d9769fa66fb2ca36a0f89344 ""
-  "d:/1902055-comp3xx-dissertation/dissertation-1902055.aux" 1672777081 14673 8cff36d250bde595a959895ed2b75540 ""
-  "d:/1902055-comp3xx-dissertation/dissertation-1902055.tex" 1672777075 22431 c11ae6fc9e0b257dde2ee546cd70f81c ""
-  "dissertation-1902055.aux" 1672777081 14673 8cff36d250bde595a959895ed2b75540 "pdflatex"
+  "d:/1902055-comp3xx-dissertation/dissertation-1902055.aux" 1678186717 14673 8cff36d250bde595a959895ed2b75540 ""
+  "d:/1902055-comp3xx-dissertation/dissertation-1902055.tex" 1678186714 22523 717fec2eae47c13e95936d140ad5e718 ""
+  "dissertation-1902055.aux" 1678186717 14673 8cff36d250bde595a959895ed2b75540 "pdflatex"
   "dissertation-1902055.bbl" 1670530746 71540 fbc68a2b431f0a0de7bead872759c981 "biber dissertation-1902055"
-  "dissertation-1902055.out" 1672777081 2457 406b8b0e51ecd5051c26bd01ba0f3c8f "pdflatex"
-  "dissertation-1902055.run.xml" 1672777081 2455 7639837efbf6f27ea72e890d7f838e7f "pdflatex"
-  "dissertation-1902055.tex" 1672777075 22431 c11ae6fc9e0b257dde2ee546cd70f81c ""
+  "dissertation-1902055.out" 1678186717 2457 406b8b0e51ecd5051c26bd01ba0f3c8f "pdflatex"
+  "dissertation-1902055.run.xml" 1678186717 2455 7639837efbf6f27ea72e890d7f838e7f "pdflatex"
+  "dissertation-1902055.tex" 1678186714 22523 717fec2eae47c13e95936d140ad5e718 ""
   "figures//auction-house-after.png" 1670475503 10354 d9dd2ed708bb31b2064c038bf44dc225 ""
   "figures//auction-house-before.png" 1663877078 1035198 23599960466958fd7d7dc947d3b02f98 ""
   (generated)
-  "dissertation-1902055.aux"
-  "dissertation-1902055.bcf"
   "d:/1902055-comp3xx-dissertation/dissertation-1902055.pdf"
   "dissertation-1902055.run.xml"
-  "dissertation-1902055.log"
   "d:/1902055-comp3xx-dissertation/dissertation-1902055.log"
-  "dissertation-1902055.out"
+  "dissertation-1902055.aux"
+  "dissertation-1902055.log"
+  "dissertation-1902055.bcf"
   "dissertation-1902055.pdf"
+  "dissertation-1902055.out"
