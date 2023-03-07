@@ -1,0 +1,1505 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Ahmad2009}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=bd17cac13c674d821dda82c4390a5119}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Muhammad\bibnamedelima Aurangzeb},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6592f79cbd7c81640f51f4f067ad9455}{%
+           family={Keegan},
+           familyi={K\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0a4a1b0b097ed3dcbf57e7327d808d9d}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Jaideep},
+           giveni={J\bibinitperiod}}}%
+        {{hash=53ef40a7cbd6b71b68f52eb6ec07c425}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Dmitri},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ea55b0b2fdbe0689c97ad6dde679bdf4}{%
+           family={Contractor},
+           familyi={C\bibinitperiod},
+           given={Noshir},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c535194f9bfd81c2de04357a4ce52a8}
+      \strng{fullhash}{10bf41100dcef949a22742f4276ca55d}
+      \strng{bibnamehash}{7c535194f9bfd81c2de04357a4ce52a8}
+      \strng{authorbibnamehash}{7c535194f9bfd81c2de04357a4ce52a8}
+      \strng{authornamehash}{7c535194f9bfd81c2de04357a4ce52a8}
+      \strng{authorfullhash}{10bf41100dcef949a22742f4276ca55d}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Gold farming refers to the illicit practice of gathering and selling virtual goods in online games for real money. Although around one million gold farmers engage in gold farming related activities, to date a systematic study of identifying gold farmers has not been done. In this paper we use data from the massively-multiplayer online role-playing game (MMORPG) EverQuest II to identify gold farmers. We perform an exploratory logistic regression analysis to identify salient descriptive statistics followed by a machine learning binary classification problem to identify a set of features for classification purposes. Given the cost associated with investigating gold farmers, we also give criteria for evaluating gold farming detection techniques, and provide suggestions for future testing and evaluation techniques.}
+      \field{booktitle}{2009 International Conference on Computational Science and Engineering}
+      \field{month}{8}
+      \field{title}{Mining for Gold Farmers: Automatic Detection of Deviant Players in MMOGs}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{340\bibrangedash 345}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/CSE.2009.307
+      \endverb
+    \endentry
+    \entry{Ahmed2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7fb2375082bc9ad06db36522c8341d67}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={Mohiuddin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=79c3752772e9248f7d4a4e9e419300b8}{%
+           family={Mahmood},
+           familyi={M\bibinitperiod},
+           given={Abdun\bibnamedelima Naser},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=4bfdb9872107eb1e5f742bc03f7a83d4}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Md.\bibnamedelimi Rafiqul},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{3be106c3a97b3ae290b3281361238086}
+      \strng{fullhash}{3be106c3a97b3ae290b3281361238086}
+      \strng{bibnamehash}{3be106c3a97b3ae290b3281361238086}
+      \strng{authorbibnamehash}{3be106c3a97b3ae290b3281361238086}
+      \strng{authornamehash}{3be106c3a97b3ae290b3281361238086}
+      \strng{authorfullhash}{3be106c3a97b3ae290b3281361238086}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0167-739X}
+      \field{title}{A survey of anomaly detection techniques in financial domain}
+      \field{volume}{55}
+      \field{year}{2016}
+      \field{pages}{278\bibrangedash 288}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.future.2015.01.001
+      \endverb
+    \endentry
+    \entry{AmazonGamesCOC}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=80f5f693bf0cee8f7e1fc63c031476a5}{%
+           family={{Amazon Games}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{80f5f693bf0cee8f7e1fc63c031476a5}
+      \strng{fullhash}{80f5f693bf0cee8f7e1fc63c031476a5}
+      \strng{bibnamehash}{80f5f693bf0cee8f7e1fc63c031476a5}
+      \strng{authorbibnamehash}{80f5f693bf0cee8f7e1fc63c031476a5}
+      \strng{authornamehash}{80f5f693bf0cee8f7e1fc63c031476a5}
+      \strng{authorfullhash}{80f5f693bf0cee8f7e1fc63c031476a5}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In addition to our Terms of Use and Naming Policy, this Code of Conduct applies to all our games and services. 1. Treat others the way they wanted to be treated 2. Play to enjoy the game 3. Play fair 4. Focus on the game 5. Safeguard accounts and protect personal information}
+      \field{howpublished}{URL}
+      \field{note}{Accessed on November 11th 2022}
+      \field{title}{Amazon Games Code of Conduct}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20221110052745/https://www.amazon.com/gp/help/customer/display.html?nodeId=GK4QHHHAC82SQTS8
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20221110052745/https://www.amazon.com/gp/help/customer/display.html?nodeId=GK4QHHHAC82SQTS8
+      \endverb
+      \keyw{Code of Conduct,Terms of Service}
+    \endentry
+    \entry{Baldi2011}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=29071d8aba395a6fac114cffcb4b6b19}{%
+           family={Baldi},
+           familyi={B\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, USA}%
+      }
+      \list{publisher}{1}{%
+        {JMLR.org}%
+      }
+      \strng{namehash}{29071d8aba395a6fac114cffcb4b6b19}
+      \strng{fullhash}{29071d8aba395a6fac114cffcb4b6b19}
+      \strng{bibnamehash}{29071d8aba395a6fac114cffcb4b6b19}
+      \strng{authorbibnamehash}{29071d8aba395a6fac114cffcb4b6b19}
+      \strng{authornamehash}{29071d8aba395a6fac114cffcb4b6b19}
+      \strng{authorfullhash}{29071d8aba395a6fac114cffcb4b6b19}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Autoencoders play a fundamental role in unsupervised learning and in deep architectures for transfer learning and other tasks. In spite of their fundamental role, only linear autoencoders over the real numbers have been solved analytically. Here we present a general mathematical framework for the study of both linear and non-linear autoencoders. The framework allows one to derive an analytical treatment for the most non-linear autoencoder, the Boolean autoencoder. Learning in the Boolean autoencoder is equivalent to a clustering problem that can be solved in polynomial time when the number of clusters is small and becomes NP complete when the number of clusters is large. The framework sheds light on the different kinds of autoencoders, their learning complexity, their horizontal and vertical composability in deep architectures, their critical points, and their fundamental connections to clustering, Hebbian learning, and information theory.}
+      \field{booktitle}{Proceedings of the 2011 International Conference on Unsupervised and Transfer Learning Workshop - Volume 27}
+      \field{series}{UTLW'11}
+      \field{title}{Autoencoders, Unsupervised Learning and Deep Architectures}
+      \field{year}{2011}
+      \field{pages}{37\bibrangedash 50}
+      \range{pages}{14}
+      \keyw{information theory,complexity,boolean,principal component analysis,compression,deep architectures,hebbian learning,clustering,unsupervised learning,autoencoders}
+    \endentry
+    \entry{Bergman2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2e590551d2b76c6c8e244e1978d82a7a}{%
+           family={Bergman},
+           familyi={B\bibinitperiod},
+           given={Liron},
+           giveni={L\bibinitperiod}}}%
+        {{hash=55efb0f1e8b5c54cf62b4ffea5bc8660}{%
+           family={Hoshen},
+           familyi={H\bibinitperiod},
+           given={Yedid},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{625f820c6a8abb66e27f5fe9d195761c}
+      \strng{fullhash}{625f820c6a8abb66e27f5fe9d195761c}
+      \strng{bibnamehash}{625f820c6a8abb66e27f5fe9d195761c}
+      \strng{authorbibnamehash}{625f820c6a8abb66e27f5fe9d195761c}
+      \strng{authornamehash}{625f820c6a8abb66e27f5fe9d195761c}
+      \strng{authorfullhash}{625f820c6a8abb66e27f5fe9d195761c}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Anomaly detection, finding patterns that substantially deviate from those seen previously, is one of the fundamental problems of artificial intelligence. Recently, classification-based methods were shown to achieve superior results on this task. In this work, we present a unifying view and propose an open-set method, GOAD, to relax current generalization assumptions. Furthermore, we extend the applicability of transformation-based methods to non-image data using random affine transformations. Our method is shown to obtain state-of-the-art accuracy and is applicable to broad data types. The strong performance of our method is extensively validated on multiple datasets from different domains.}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{title}{Classification-Based Anomaly Detection for General Data}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2005.02359
+      \endverb
+      \verb{file}
+      \verb :Bergman2020 - Classification Based Anomaly Detection for General Data.pdf:PDF
+      \endverb
+      \keyw{cs.LG,cs.CV,stat.ML}
+    \endentry
+    \entry{Bhuyan2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bf3802dc4969b305466912c0f03ce6f6}{%
+           family={Bhuyan},
+           familyi={B\bibinitperiod},
+           given={Monowar\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=291604d2fbeb0ef81628c02f4faf5c32}{%
+           family={Bhattacharyya},
+           familyi={B\bibinitperiod},
+           given={Dhruba\bibnamedelima Kumar},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=9a2486720e0be03acf2090e6a50201a8}{%
+           family={Kalita},
+           familyi={K\bibinitperiod},
+           given={Jugal\bibnamedelima K},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{5447439738f569c9af22d4ac778b6956}
+      \strng{fullhash}{5447439738f569c9af22d4ac778b6956}
+      \strng{bibnamehash}{5447439738f569c9af22d4ac778b6956}
+      \strng{authorbibnamehash}{5447439738f569c9af22d4ac778b6956}
+      \strng{authornamehash}{5447439738f569c9af22d4ac778b6956}
+      \strng{authorfullhash}{5447439738f569c9af22d4ac778b6956}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ieee communications surveys \& tutorials}
+      \field{number}{1}
+      \field{title}{Network anomaly detection: methods, systems and tools}
+      \field{volume}{16}
+      \field{year}{2013}
+      \field{pages}{303\bibrangedash 336}
+      \range{pages}{34}
+    \endentry
+    \entry{Breunig2000}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=346772f472393316fd22dd8a300d2e7d}{%
+           family={Breunig},
+           familyi={B\bibinitperiod},
+           given={Markus\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9559fe65ed2c0877cf14a66fe1f8e9b3}{%
+           family={Kriegel},
+           familyi={K\bibinitperiod},
+           given={Hans-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=3538ec05ca1325677835daf67c1c45bf}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Raymond\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=802157026f850823b2027c2100cb359a}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{56fa51bc92224aa16f16bb78cd5d01f1}
+      \strng{fullhash}{d65966f90d24e1cda0c67af1ce30b712}
+      \strng{bibnamehash}{56fa51bc92224aa16f16bb78cd5d01f1}
+      \strng{authorbibnamehash}{56fa51bc92224aa16f16bb78cd5d01f1}
+      \strng{authornamehash}{56fa51bc92224aa16f16bb78cd5d01f1}
+      \strng{authorfullhash}{d65966f90d24e1cda0c67af1ce30b712}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{subtitle}{identifying density-based local outliers}
+      \field{title}{LOF: identifying density-based local outliers}
+      \field{year}{2000}
+      \verb{doi}
+      \verb 10.1145/342009.335388
+      \endverb
+    \endentry
+    \entry{Buzzi2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a42beabcd863707018aea83efc49daf4}{%
+           family={Buzzi-Ferraris},
+           familyi={B\bibinithyphendelim F\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0e47a9a3accbe5b3428f8a6814e050c2}{%
+           family={Manenti},
+           familyi={M\bibinitperiod},
+           given={Flavio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3efd2603b742a8b4fae8c5442153ad0b}
+      \strng{fullhash}{3efd2603b742a8b4fae8c5442153ad0b}
+      \strng{bibnamehash}{3efd2603b742a8b4fae8c5442153ad0b}
+      \strng{authorbibnamehash}{3efd2603b742a8b4fae8c5442153ad0b}
+      \strng{authornamehash}{3efd2603b742a8b4fae8c5442153ad0b}
+      \strng{authorfullhash}{3efd2603b742a8b4fae8c5442153ad0b}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& chemical engineering}
+      \field{number}{2}
+      \field{title}{Outlier detection in large data sets}
+      \field{volume}{35}
+      \field{year}{2011}
+      \field{pages}{388\bibrangedash 390}
+      \range{pages}{3}
+    \endentry
+    \entry{Cover1967}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e05a925b2cfe910a6897d43f9ba39978}{%
+           family={Cover},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9a57c30a474f492865fd485f0f8748f5}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{79f254d94cf7ed6ac9aed53475e87a36}
+      \strng{fullhash}{79f254d94cf7ed6ac9aed53475e87a36}
+      \strng{bibnamehash}{79f254d94cf7ed6ac9aed53475e87a36}
+      \strng{authorbibnamehash}{79f254d94cf7ed6ac9aed53475e87a36}
+      \strng{authornamehash}{79f254d94cf7ed6ac9aed53475e87a36}
+      \strng{authorfullhash}{79f254d94cf7ed6ac9aed53475e87a36}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{number}{1}
+      \field{title}{Nearest neighbor pattern classification}
+      \field{volume}{13}
+      \field{year}{1967}
+      \field{pages}{21\bibrangedash 27}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/TIT.1967.1053964
+      \endverb
+    \endentry
+    \entry{Dibbell2007}{article}{}
+      \name{author}{1}{}{%
+        {{hash=19ba120924ee09440cd988b6ab1afc90}{%
+           family={Dibbell},
+           familyi={D\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{19ba120924ee09440cd988b6ab1afc90}
+      \strng{fullhash}{19ba120924ee09440cd988b6ab1afc90}
+      \strng{bibnamehash}{19ba120924ee09440cd988b6ab1afc90}
+      \strng{authorbibnamehash}{19ba120924ee09440cd988b6ab1afc90}
+      \strng{authornamehash}{19ba120924ee09440cd988b6ab1afc90}
+      \strng{authorfullhash}{19ba120924ee09440cd988b6ab1afc90}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The New York Times Magazine}
+      \field{month}{6}
+      \field{title}{The Life of the Chinese Gold Farmer}
+      \field{year}{2007}
+    \endentry
+    \entry{Egilmez2014}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=60819ea1630894a636fe9eaaa307de47}{%
+           family={Egilmez},
+           familyi={E\bibinitperiod},
+           given={Hilmi\bibnamedelima E},
+           giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=f9a99770017d17d5bef9b3d674456da2}{%
+           family={Ortega},
+           familyi={O\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c827c580b4698b56f3d52e60b39f6295}
+      \strng{fullhash}{c827c580b4698b56f3d52e60b39f6295}
+      \strng{bibnamehash}{c827c580b4698b56f3d52e60b39f6295}
+      \strng{authorbibnamehash}{c827c580b4698b56f3d52e60b39f6295}
+      \strng{authornamehash}{c827c580b4698b56f3d52e60b39f6295}
+      \strng{authorfullhash}{c827c580b4698b56f3d52e60b39f6295}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2014 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}
+      \field{title}{Spectral anomaly detection using graph-based filtering for wireless sensor networks}
+      \field{year}{2014}
+      \field{pages}{1085\bibrangedash 1089}
+      \range{pages}{5}
+    \endentry
+    \entry{Fujita2011}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=763dd504108d9173f57a5eb224135a0c}{%
+           family={Fujita},
+           familyi={F\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6664dfc949f37c109bbd68e6924115a3}{%
+           family={Itsuki},
+           familyi={I\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f537f6dad07edd48c2bf92e8ce7ed43b}{%
+           family={Matsubara},
+           familyi={M\bibinitperiod},
+           given={Hitoshi},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=4b58bfd30f72e2acf1ed08dffc6e4a0b}{%
+           family={Bulitko},
+           familyi={B\bibinitperiod},
+           given={Vadim},
+           giveni={V\bibinitperiod}}}%
+        {{hash=7eef92b664f9451b2122835df9eba519}{%
+           family={Riedl},
+           familyi={R\bibinitperiod},
+           given={Mark\bibnamedelima O.},
+           giveni={M\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The {AAAI} Press}%
+      }
+      \strng{namehash}{0a5b6a29855dc1e6765eadbd730a0d03}
+      \strng{fullhash}{0a5b6a29855dc1e6765eadbd730a0d03}
+      \strng{bibnamehash}{0a5b6a29855dc1e6765eadbd730a0d03}
+      \strng{authorbibnamehash}{0a5b6a29855dc1e6765eadbd730a0d03}
+      \strng{authornamehash}{0a5b6a29855dc1e6765eadbd730a0d03}
+      \strng{authorfullhash}{0a5b6a29855dc1e6765eadbd730a0d03}
+      \strng{editorbibnamehash}{8afa7cb26464e3244aaa6ee36046ecf9}
+      \strng{editornamehash}{8afa7cb26464e3244aaa6ee36046ecf9}
+      \strng{editorfullhash}{8afa7cb26464e3244aaa6ee36046ecf9}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Seventh {AAAI} Conference on Artificial Intelligence and Interactive Digital Entertainment, {AIIDE} 2011, October 10-14, 2011, Stanford, California, {USA}}
+      \field{title}{Detecting Real Money Traders in {MMORPG} by Using Trading Network}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb http://www.aaai.org/ocs/index.php/AIIDE/AIIDE11/paper/view/4057
+      \endverb
+      \verb{url}
+      \verb http://www.aaai.org/ocs/index.php/AIIDE/AIIDE11/paper/view/4057
+      \endverb
+    \endentry
+    \entry{Girvan2002}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3a7c16fcf03c4a8aacfb75fe018199fd}{%
+           family={Girvan},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4bf3b98e94373b42e6f6e6dfddaf4daa}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={M.\bibnamedelimi E.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \strng{namehash}{301763f43e362529aba7b79f483954b6}
+      \strng{fullhash}{301763f43e362529aba7b79f483954b6}
+      \strng{bibnamehash}{301763f43e362529aba7b79f483954b6}
+      \strng{authorbibnamehash}{301763f43e362529aba7b79f483954b6}
+      \strng{authornamehash}{301763f43e362529aba7b79f483954b6}
+      \strng{authorfullhash}{301763f43e362529aba7b79f483954b6}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0027-8424}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{number}{12}
+      \field{title}{Community structure in social and biological networks}
+      \field{volume}{99}
+      \field{year}{2002}
+      \field{pages}{7821\bibrangedash 7826}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1073/pnas.122653799
+      \endverb
+      \verb{urlraw}
+      \verb www.pnas.org/content/vol99/issue12/#APPLIED_MATHEMATICS
+      \endverb
+      \verb{url}
+      \verb www.pnas.org/content/vol99/issue12/#APPLIED_MATHEMATICS
+      \endverb
+      \keyw{91D30}
+    \endentry
+    \entry{Gruschka2018}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a3a7c407a479ebd834c3063252921a6f}{%
+           family={Gruschka},
+           familyi={G\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=24b881cbb45d3e813e3d7ce7bd027d49}{%
+           family={Mavroeidis},
+           familyi={M\bibinitperiod},
+           given={Vasileios},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d126a156c346e6c41ed4e022c2312881}{%
+           family={Vishi},
+           familyi={V\bibinitperiod},
+           given={Kamer},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ebb1d8996283fe2a53497c257c59e1b7}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Meiko},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{74c491d0ee89da566a8d354589124433}
+      \strng{fullhash}{c6436a1b60da43835dfc37804b518e82}
+      \strng{bibnamehash}{74c491d0ee89da566a8d354589124433}
+      \strng{authorbibnamehash}{74c491d0ee89da566a8d354589124433}
+      \strng{authornamehash}{74c491d0ee89da566a8d354589124433}
+      \strng{authorfullhash}{c6436a1b60da43835dfc37804b518e82}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE International Conference on Big Data (Big Data)}
+      \field{title}{Privacy issues and data protection in big data: a case study analysis under GDPR}
+      \field{year}{2018}
+      \field{pages}{5027\bibrangedash 5033}
+      \range{pages}{7}
+    \endentry
+    \entry{Han2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=883b5eb877542b6f77d15a98b2edf9fc}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Mee\bibnamedelima Lan},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=5c36329aacb98f698129e12edf3b101b}{%
+           family={Kwak},
+           familyi={K\bibinitperiod},
+           given={Byung\bibnamedelima Il},
+           giveni={B\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=9cf65b44e8ca6c9dd630dd3ea66fbfe7}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Huy\bibnamedelima Kang},
+           giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4f174db0e41acb6e8c918dd4c30ba37}
+      \strng{fullhash}{f4f174db0e41acb6e8c918dd4c30ba37}
+      \strng{bibnamehash}{f4f174db0e41acb6e8c918dd4c30ba37}
+      \strng{authorbibnamehash}{f4f174db0e41acb6e8c918dd4c30ba37}
+      \strng{authornamehash}{f4f174db0e41acb6e8c918dd4c30ba37}
+      \strng{authorfullhash}{f4f174db0e41acb6e8c918dd4c30ba37}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Cheating and Detection Method in Massively Multiplayer Online Role-Playing Game: Systematic Literature Review}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{49050\bibrangedash 49063}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2022.3172110
+      \endverb
+    \endentry
+    \entry{GIPA2020kr}{online}{}
+      \name{author}{1}{}{%
+        {{hash=07057d7fe9c7bbcb9cb7131358c03312}{%
+           family={{Korea Legislation Research Institute}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{07057d7fe9c7bbcb9cb7131358c03312}
+      \strng{fullhash}{07057d7fe9c7bbcb9cb7131358c03312}
+      \strng{bibnamehash}{07057d7fe9c7bbcb9cb7131358c03312}
+      \strng{authorbibnamehash}{07057d7fe9c7bbcb9cb7131358c03312}
+      \strng{authornamehash}{07057d7fe9c7bbcb9cb7131358c03312}
+      \strng{authorfullhash}{07057d7fe9c7bbcb9cb7131358c03312}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{title}{GAME INDUSTRY PROMOTION ACT. Act No. 17396}
+      \field{urlday}{8}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://elaw.klri.re.kr/eng_service/lawView.do?hseq=54546&lang=ENG
+      \endverb
+      \verb{url}
+      \verb https://elaw.klri.re.kr/eng_service/lawView.do?hseq=54546&lang=ENG
+      \endverb
+    \endentry
+    \entry{Maxroll2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2909fed5f77b8a7b4c8d8e12c66c9344}{%
+           family={{Maxroll GmbH}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2909fed5f77b8a7b4c8d8e12c66c9344}
+      \strng{fullhash}{2909fed5f77b8a7b4c8d8e12c66c9344}
+      \strng{bibnamehash}{2909fed5f77b8a7b4c8d8e12c66c9344}
+      \strng{authorbibnamehash}{2909fed5f77b8a7b4c8d8e12c66c9344}
+      \strng{authornamehash}{2909fed5f77b8a7b4c8d8e12c66c9344}
+      \strng{authorfullhash}{2909fed5f77b8a7b4c8d8e12c66c9344}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{URL}
+      \field{note}{Accessed on December 5th 2022}
+      \field{title}{Character Build Guides}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20221205003955/https://maxroll.gg/lost-ark/category/build-guides
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20221205003955/https://maxroll.gg/lost-ark/category/build-guides
+      \endverb
+    \endentry
+    \entry{Misra2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=33e659e99182441e4ba91833dba975ae}{%
+           family={Misra},
+           familyi={M\bibinitperiod},
+           given={Sumit},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ff15aaa3d87c362594766461ac93f4b0}{%
+           family={Thakur},
+           familyi={T\bibinitperiod},
+           given={Soumyadeep},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9a5aab46fad3a9fc22e5e5e699a48099}{%
+           family={Ghosh},
+           familyi={G\bibinitperiod},
+           given={Manosij},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b55c399b6e8391806fc1e07805e322c9}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Sanjoy\bibnamedelima Kumar},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c27fe280e772c1c40c051ad2b31e86c}
+      \strng{fullhash}{5b0921c4f9cc76e14e3dd5e06bd7d357}
+      \strng{bibnamehash}{8c27fe280e772c1c40c051ad2b31e86c}
+      \strng{authorbibnamehash}{8c27fe280e772c1c40c051ad2b31e86c}
+      \strng{authornamehash}{8c27fe280e772c1c40c051ad2b31e86c}
+      \strng{authorfullhash}{5b0921c4f9cc76e14e3dd5e06bd7d357}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1877-0509}
+      \field{title}{An Autoencoder Based Model for Detecting Fraudulent Credit Card Transaction}
+      \field{volume}{167}
+      \field{year}{2020}
+      \field{pages}{254\bibrangedash 262}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.procs.2020.03.219
+      \endverb
+    \endentry
+    \entry{Nassif2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=915767c19b555ab6694960d4a53e14a3}{%
+           family={Nassif},
+           familyi={N\bibinitperiod},
+           given={Ali\bibnamedelima Bou},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=645222f31aa3c674adb3522294cb94dd}{%
+           family={Talib},
+           familyi={T\bibinitperiod},
+           given={Manar\bibnamedelima Abu},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=525f3e44c3d170c9bf4ff892c8685d85}{%
+           family={Nasir},
+           familyi={N\bibinitperiod},
+           given={Qassim},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=63877bf5ad29692ce734259381186d9d}{%
+           family={Dakalbab},
+           familyi={D\bibinitperiod},
+           given={Fatima\bibnamedelima Mohamad},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e3e865d4d48efaaf19930d5c88d3aa8e}
+      \strng{fullhash}{9e22e9641beba52d31f72b393f632876}
+      \strng{bibnamehash}{e3e865d4d48efaaf19930d5c88d3aa8e}
+      \strng{authorbibnamehash}{e3e865d4d48efaaf19930d5c88d3aa8e}
+      \strng{authornamehash}{e3e865d4d48efaaf19930d5c88d3aa8e}
+      \strng{authorfullhash}{9e22e9641beba52d31f72b393f632876}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Anomaly detection has been used for decades to identify and extract anomalous components from data. Many techniques have been used to detect anomalies. One of the increasingly significant techniques is Machine Learning (ML), which plays an important role in this area. In this research paper, we conduct a Systematic Literature Review (SLR) which analyzes ML models that detect anomalies in their application. Our review analyzes the models from four perspectives; the applications of anomaly detection, ML techniques, performance metrics for ML models, and the classification of anomaly detection. In our review, we have identified 290 research articles, written from 2000-2020, that discuss ML techniques for anomaly detection. After analyzing the selected research articles, we present 43 different applications of anomaly detection found in the selected research articles. Moreover, we identify 29 distinct ML models used in the identification of anomalies. Finally, we present 22 different datasets that are applied in experiments on anomaly detection, as well as many other general datasets. In addition, we observe that unsupervised anomaly detection has been adopted by researchers more than other classification anomaly detection systems. Detection of anomalies using ML models is a promising area of research, and there are a lot of ML models that have been implemented by researchers. Therefore, we provide researchers with recommendations and guidelines based on this review.}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Machine Learning for Anomaly Detection: A Systematic Review}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{78658\bibrangedash 78700}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2021.3083060
+      \endverb
+      \verb{file}
+      \verb :Nassif2021 - Machine Learning for Anomaly Detection_ a Systematic Review.pdf:PDF
+      \endverb
+      \keyw{Anomaly detection,Machine learning,Intrusion detection,Systematics,Training,Bibliographies,Analytical models,machine learning,security and privacy protection}
+    \endentry
+    \entry{Noble2003}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=51c9cb69dbb6906d8d91b6fb4a728cec}{%
+           family={Noble},
+           familyi={N\bibinitperiod},
+           given={Caleb\bibnamedelima C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f1eea55bf4ba0140c082150ec8917c76}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Diane\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington, D.C.}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{eb94cecbbb11ec5d839f3f287f43ab2b}
+      \strng{fullhash}{eb94cecbbb11ec5d839f3f287f43ab2b}
+      \strng{bibnamehash}{eb94cecbbb11ec5d839f3f287f43ab2b}
+      \strng{authorbibnamehash}{eb94cecbbb11ec5d839f3f287f43ab2b}
+      \strng{authornamehash}{eb94cecbbb11ec5d839f3f287f43ab2b}
+      \strng{authorfullhash}{eb94cecbbb11ec5d839f3f287f43ab2b}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Anomaly detection is an area that has received much attention in recent years. It has a wide variety of applications, including fraud detection and network intrusion detection. A good deal of research has been performed in this area, often using strings or attribute-value data as the medium from which anomalies are to be extracted. Little work, however, has focused on anomaly detection in graph-based data. In this paper, we introduce two techniques for graph-based anomaly detection. In addition, we introduce a new method for calculating the regularity of a graph, with applications to anomaly detection. We hypothesize that these methods will prove useful both for finding anomalies, and for determining the likelihood of successful anomaly detection within graph-based data. We provide experimental results using both real-world network intrusion data and artificially-created data.}
+      \field{booktitle}{Proceedings of the Ninth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{isbn}{1581137370}
+      \field{series}{KDD '03}
+      \field{title}{Graph-Based Anomaly Detection}
+      \field{year}{2003}
+      \field{pages}{631\bibrangedash 636}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/956750.956831
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/956750.956831
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/956750.956831
+      \endverb
+      \keyw{graph regularity,data mining,anomaly detection}
+    \endentry
+    \entry{Omar2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cf1854a7afc0e7bea9b6ffc407a27a63}{%
+           family={Omar},
+           familyi={O\bibinitperiod},
+           given={Salima},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fc3c43f14839716a075c1adca2e6ae59}{%
+           family={Ngadi},
+           familyi={N\bibinitperiod},
+           given={Asri},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7f31044f46233809b24fdbbf40a6f87f}{%
+           family={Jebur},
+           familyi={J\bibinitperiod},
+           given={Hamid\bibnamedelima H.},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbe698afbe4b489721a61d3c2a740bbc}
+      \strng{fullhash}{bbe698afbe4b489721a61d3c2a740bbc}
+      \strng{bibnamehash}{bbe698afbe4b489721a61d3c2a740bbc}
+      \strng{authorbibnamehash}{bbe698afbe4b489721a61d3c2a740bbc}
+      \strng{authornamehash}{bbe698afbe4b489721a61d3c2a740bbc}
+      \strng{authorfullhash}{bbe698afbe4b489721a61d3c2a740bbc}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0975-8887}
+      \field{title}{Machine Learning Techniques for Anomaly Detection: An Overview}
+      \field{volume}{79}
+      \field{pages}{33\bibrangedash 41}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.5120/13715-1478
+      \endverb
+    \endentry
+    \entry{Pollet2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9b4684d3a30d92875e401fc2aecaced4}{%
+           family={Pollet},
+           familyi={P\bibinitperiod},
+           given={Thomas\bibnamedelima V},
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=0b7c541b41445dee43c095a073b6b6a3}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Meij},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Leander},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2aec92e37e1d76672c815f1aaa1165aa}
+      \strng{fullhash}{2aec92e37e1d76672c815f1aaa1165aa}
+      \strng{bibnamehash}{2aec92e37e1d76672c815f1aaa1165aa}
+      \strng{authorbibnamehash}{2aec92e37e1d76672c815f1aaa1165aa}
+      \strng{authornamehash}{2aec92e37e1d76672c815f1aaa1165aa}
+      \strng{authorfullhash}{2aec92e37e1d76672c815f1aaa1165aa}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Adaptive Human Behavior and Physiology}
+      \field{number}{1}
+      \field{title}{To remove or not to remove: the impact of outlier handling on significance testing in testosterone data}
+      \field{volume}{3}
+      \field{year}{2017}
+      \field{pages}{43\bibrangedash 60}
+      \range{pages}{18}
+    \endentry
+    \entry{Sadineni2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=215e1046c54a9fd20368f12a71798e7a}{%
+           family={Sadineni},
+           familyi={S\bibinitperiod},
+           given={Praveen\bibnamedelima Kumar},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{215e1046c54a9fd20368f12a71798e7a}
+      \strng{fullhash}{215e1046c54a9fd20368f12a71798e7a}
+      \strng{bibnamehash}{215e1046c54a9fd20368f12a71798e7a}
+      \strng{authorbibnamehash}{215e1046c54a9fd20368f12a71798e7a}
+      \strng{authornamehash}{215e1046c54a9fd20368f12a71798e7a}
+      \strng{authorfullhash}{215e1046c54a9fd20368f12a71798e7a}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Detection of Fraudulent Transactions in Credit Card using Machine Learning Algorithms}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1109/i-smac49090.2020.9243545
+      \endverb
+    \endentry
+    \entry{Schoelkopf1999}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=ca31cc11ec9370460148c3a9c48fce45}{%
+           family={Schölkopf},
+           familyi={S\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2e35ef7841aac7d181dcf0a232a11d6d}{%
+           family={Williamson},
+           familyi={W\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=82d61e31b4f7f82ad59ff887349bdfe3}{%
+           family={Smola},
+           familyi={S\bibinitperiod},
+           given={Alexander\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8feae4ec394a5f6905c74b1a7abff875}{%
+           family={Shawe-Taylor},
+           familyi={S\bibinithyphendelim T\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b18cccf0f11300769fc4b01f5fe5f13a}{%
+           family={Platt},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=d49f26d4f42c7abfc9e0c793d822ad47}{%
+           family={Solla},
+           familyi={S\bibinitperiod},
+           given={Sara\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8455a412f2af41f64ec8845f83a4a72a}{%
+           family={Leen},
+           familyi={L\bibinitperiod},
+           given={Todd\bibnamedelima K.},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=9f1b6144a45b1967e989e74552e37ada}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Klaus-Robert},
+           giveni={K\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The {MIT} Press}%
+      }
+      \strng{namehash}{a70215356a8de56cfef0850e9b43f897}
+      \strng{fullhash}{1cb758575f613944ba1397a668ec0651}
+      \strng{bibnamehash}{a70215356a8de56cfef0850e9b43f897}
+      \strng{authorbibnamehash}{a70215356a8de56cfef0850e9b43f897}
+      \strng{authornamehash}{a70215356a8de56cfef0850e9b43f897}
+      \strng{authorfullhash}{1cb758575f613944ba1397a668ec0651}
+      \strng{editorbibnamehash}{9f80770d2c5d8caaf39a3745db3c549f}
+      \strng{editornamehash}{9f80770d2c5d8caaf39a3745db3c549f}
+      \strng{editorfullhash}{9f80770d2c5d8caaf39a3745db3c549f}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems 12, [{NIPS} Conference, Denver, Colorado, USA, November 29 - December 4, 1999]}
+      \field{title}{Support Vector Method for Novelty Detection}
+      \field{year}{1999}
+      \field{pages}{582\bibrangedash 588}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb http://papers.nips.cc/paper/1723-support-vector-method-for-novelty-detection
+      \endverb
+      \verb{url}
+      \verb http://papers.nips.cc/paper/1723-support-vector-method-for-novelty-detection
+      \endverb
+    \endentry
+    \entry{Sifa2021}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=63b7412f5a4ed5097d846705eb11b5b9}{%
+           family={Sifa},
+           familyi={S\bibinitperiod},
+           given={Rafet},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1b7da0d25e8562fba1bfb0ae0fac76ab}{%
+           family={Drachen},
+           familyi={D\bibinitperiod},
+           given={Anders},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7a51bdf5f40347739369cbf1e18e96d3}{%
+           family={Block},
+           familyi={B\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=50580b9f2d99cee1b1a751a69fad3401}{%
+           family={Moon},
+           familyi={M\bibinitperiod},
+           given={Spencer},
+           giveni={S\bibinitperiod}}}%
+        {{hash=702a0163412e3c4f38030060290e2fab}{%
+           family={Dubhashi},
+           familyi={D\bibinitperiod},
+           given={Anisha},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b0b5a8c313c1802a5c5d118c288c1a10}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e2296696ff6492396e1373c40c39fe3c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zili},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=0f7d2eeafeb0f0f52d9f7b3ced4a5e6a}{%
+           family={Klabjan},
+           familyi={K\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8eb0457ba077dca35e4526e5e50d17a5}{%
+           family={Demediuk},
+           familyi={D\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Dunedin, New Zealand}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{db3ca067d5ba227149ee1905e5b18ae0}
+      \strng{fullhash}{91904920cb478b522a4665ea126dfcdf}
+      \strng{bibnamehash}{db3ca067d5ba227149ee1905e5b18ae0}
+      \strng{authorbibnamehash}{db3ca067d5ba227149ee1905e5b18ae0}
+      \strng{authornamehash}{db3ca067d5ba227149ee1905e5b18ae0}
+      \strng{authorfullhash}{91904920cb478b522a4665ea126dfcdf}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Anomalies in esports refer to situations when something unexpected or unlikely happens. Rapid performance changes, unusual strategies, extraordinary plays, accelerated resource gains or team wipeouts comprise examples, but anomalies fundamentally comprise any situation where something unexpected happens. In multi-player online esports games such as multi-player online battle arena games, anomalies form a key component of the commentator-driven storytelling. In fast-paced, complex esports titles, anomalies can however go undetected until it is too late for commentators to note them and use them in their coverage, and for viewers they can take place outside the viewable area of the broadcast stream. Furthermore, there are limited tools available for commentators and players across professional and amateur levels for analysing or categorising anomalies. The research presented here provides a novel approach towards identifying one type of outliers in esports matches, via the application of archetype analysis to extract novel insights that can be used by commentators to improve esports coverage. As a case example, the major esports title League of Legends is used. We present a viable methodology for utilizing distributions resulting from the archetypal clusters and reconstruction errors to expose and explain anomalous events during gameplay.}
+      \field{booktitle}{2021 Australasian Computer Science Week Multiconference}
+      \field{isbn}{9781450389563}
+      \field{series}{ACSW '21}
+      \field{title}{Archetypal Analysis Based Anomaly Detection for Improved Storytelling in Multiplayer Online Battle Arena Games}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1145/3437378.3442690
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3437378.3442690
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3437378.3442690
+      \endverb
+      \keyw{Archetypal Analysis,Storytelling,Maxoids,Multiplayer Online Battle Arena,Anomaly Detection}
+    \endentry
+    \entry{Simmons2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f3ff1bcf3fe7c2fc5b52221e1395aec0}{%
+           family={Simmons},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=6e304c8a472f89f00cf305880a345f82}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Leif\bibnamedelima D},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=4a557b269a909c0560985e798a1584f6}{%
+           family={Simonsohn},
+           familyi={S\bibinitperiod},
+           given={Uri},
+           giveni={U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{1467e6b06a4536fde866b5a4842ec576}
+      \strng{fullhash}{1467e6b06a4536fde866b5a4842ec576}
+      \strng{bibnamehash}{1467e6b06a4536fde866b5a4842ec576}
+      \strng{authorbibnamehash}{1467e6b06a4536fde866b5a4842ec576}
+      \strng{authornamehash}{1467e6b06a4536fde866b5a4842ec576}
+      \strng{authorfullhash}{1467e6b06a4536fde866b5a4842ec576}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{False-positive psychology: undisclosed flexibility in data collection and analysis allows presenting anything as significant.}
+      \field{year}{2016}
+    \endentry
+    \entry{LostArk2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=847f5753125c6e68c7ce99292acfcefb}{%
+           family={{Smilegate}},
+           familyi={S\bibinitperiod},
+           given={{Amazon Games}},
+           giveni={A\bibinitperiod},
+           suffix={{Amazon Game Studios}},
+           suffixi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{847f5753125c6e68c7ce99292acfcefb}
+      \strng{fullhash}{847f5753125c6e68c7ce99292acfcefb}
+      \strng{bibnamehash}{847f5753125c6e68c7ce99292acfcefb}
+      \strng{authorbibnamehash}{847f5753125c6e68c7ce99292acfcefb}
+      \strng{authornamehash}{847f5753125c6e68c7ce99292acfcefb}
+      \strng{authorfullhash}{847f5753125c6e68c7ce99292acfcefb}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Digital Game}
+      \field{title}{Lost Ark - Free to Play MMO Action RPG}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.playlostark.com/en-us
+      \endverb
+      \verb{url}
+      \verb https://www.playlostark.com/en-us
+      \endverb
+    \endentry
+    \entry{LostArkStove2019}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=558f9d8e5e2c0e270ce145cd2529af95}{%
+           family={{Smilegate RPG}},
+           familyi={S\bibinitperiod},
+           given={{Smilegate Stove}},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{558f9d8e5e2c0e270ce145cd2529af95}
+      \strng{fullhash}{558f9d8e5e2c0e270ce145cd2529af95}
+      \strng{bibnamehash}{558f9d8e5e2c0e270ce145cd2529af95}
+      \strng{authorbibnamehash}{558f9d8e5e2c0e270ce145cd2529af95}
+      \strng{authornamehash}{558f9d8e5e2c0e270ce145cd2529af95}
+      \strng{authorfullhash}{558f9d8e5e2c0e270ce145cd2529af95}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{title}{Lost Ark - Stove Website}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://lostark.game.onstove.com/Markets
+      \endverb
+      \verb{url}
+      \verb https://lostark.game.onstove.com/Markets
+      \endverb
+    \endentry
+    \entry{Song2007}{article}{}
+      \name{author}{4}{}{%
+        {{hash=950888dc4ca1c84ba3cfaae8f07a1745}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Xiuyao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=5778026c196db8760b8cb8b7fdf95b4d}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Mingxi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=db354524e76a1c5da6a582473cc8140b}{%
+           family={Jermaine},
+           familyi={J\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fc1097ec61f9978b0681d83b669443ea}{%
+           family={Ranka},
+           familyi={R\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{41802d75c9d97635c502fe6b8c3d75fa}
+      \strng{fullhash}{02ebe5b84c3fa1289d97ade7cd9d0098}
+      \strng{bibnamehash}{41802d75c9d97635c502fe6b8c3d75fa}
+      \strng{authorbibnamehash}{41802d75c9d97635c502fe6b8c3d75fa}
+      \strng{authornamehash}{41802d75c9d97635c502fe6b8c3d75fa}
+      \strng{authorfullhash}{02ebe5b84c3fa1289d97ade7cd9d0098}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on knowledge and Data Engineering}
+      \field{number}{5}
+      \field{title}{Conditional anomaly detection}
+      \field{volume}{19}
+      \field{year}{2007}
+      \field{pages}{631\bibrangedash 645}
+      \range{pages}{15}
+    \endentry
+    \entry{SquareEnixCOC}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=082394a8f2347bc8a0d624e33fc9fa46}{%
+           family={{Square Enix}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{082394a8f2347bc8a0d624e33fc9fa46}
+      \strng{fullhash}{082394a8f2347bc8a0d624e33fc9fa46}
+      \strng{bibnamehash}{082394a8f2347bc8a0d624e33fc9fa46}
+      \strng{authorbibnamehash}{082394a8f2347bc8a0d624e33fc9fa46}
+      \strng{authornamehash}{082394a8f2347bc8a0d624e33fc9fa46}
+      \strng{authorfullhash}{082394a8f2347bc8a0d624e33fc9fa46}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Real Money Trading (RMT) is the sale of in-game items, currency, characters or other data in order to obtain real money. RMT activity is strictly prohibited and any players caught participating in RMT-related activities will be punished.}
+      \field{howpublished}{URL}
+      \field{note}{Accessed on November 11th 2022}
+      \field{title}{Square Enix Final Fantasy XI Online Real Money Trading (RMT)}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20221110062944/https://support.na.square-enix.com/faqarticle.php?id=20&kid=12802
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20221110062944/https://support.na.square-enix.com/faqarticle.php?id=20&kid=12802
+      \endverb
+      \keyw{Code of Conduct,Terms of Service}
+    \endentry
+    \entry{Tao2019}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=a2594cdd9ed9bea0669b9efc298c6c3d}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Jianrong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=75d4d73b09c08cb8f5c7eff768ff0de0}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Jianshi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=50c79911aeec1c4b7bd386e2293aa5cc}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shize},
+           giveni={S\bibinitperiod}}}%
+        {{hash=577d6e065b8002d73d7c24d24aedd79b}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Sha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=633868647bdad10db9dfc1021c48c22d}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Runze},
+           giveni={R\bibinitperiod}}}%
+        {{hash=522f9824ad7abc272e15cfa4a81abf67}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Changjie},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a79e6a0454388fc3ede42ca69f997534}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Anchorage, AK, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{21efabf750403b36f4f6372b0d990426}
+      \strng{fullhash}{50f72c3a176762a3f39c4a9f78f81039}
+      \strng{bibnamehash}{21efabf750403b36f4f6372b0d990426}
+      \strng{authorbibnamehash}{21efabf750403b36f4f6372b0d990426}
+      \strng{authornamehash}{21efabf750403b36f4f6372b0d990426}
+      \strng{authorfullhash}{50f72c3a176762a3f39c4a9f78f81039}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Online gaming is a multi-billion dollar industry that entertains a large, global population. However, one unfortunate phenomenon known as real money trading harms the competition and the fun. Real money trading is an interesting economic activity used to exchange assets in a virtual world with real world currencies, leading to imbalance of game economy and inequality of wealth and opportunity. Game operation teams have been devoting much efforts on real money trading detection, however, it still remains a challenging task. To overcome the limitation from traditional methods conducted by game operation teams, we propose, MVAN, the first multi-view attention networks for detecting real money trading with multi-view data sources. We present a multi-graph attention network (MGAT) in the graph structure view, a behavior attention network (BAN) in the vertex content view, a portrait attention network (PAN) in the vertex attribute view and a data source attention network (DSAN) in the data source view. Experiments conducted on real-world game logs from a commercial NetEase MMORPG( JusticePC) show that our method consistently performs promising results compared with other competitive methods over time and verifiy the importance and rationality of attention mechanisms. MVAN is deployed to several MMORPGs in NetEase in practice and achieving remarkable performance improvement and acceleration. Our method can easily generalize to other types of related tasks in real world, such as fraud detection, drug tracking and money laundering tracking etc.}
+      \field{booktitle}{Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining}
+      \field{isbn}{9781450362016}
+      \field{month}{7}
+      \field{pagetotal}{11}
+      \field{series}{KDD '19}
+      \field{title}{MVAN: Multi-view Attention Networks for Real Money Trading Detection in Online Games}
+      \field{year}{2019}
+      \field{pages}{2536\bibrangedash 2546}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1145/3292500.3330687
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3292500.3330687
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3292500.3330687
+      \endverb
+      \keyw{attention mechanism,multi-graph attention network,multi-view attention networks,online games,real money trading detection}
+    \endentry
+    \entry{Nuremberg1947}{article}{}
+      \name{editor}{1}{}{%
+        {{hash=d41d8cd98f00b204e9800998ecf8427e}{%
+}}%
+      }
+      \list{publisher}{1}{%
+        {BMJ Publishing Group Ltd}%
+      }
+      \strng{namehash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{fullhash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{bibnamehash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{editorbibnamehash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{editornamehash}{d41d8cd98f00b204e9800998ecf8427e}
+      \strng{editorfullhash}{d41d8cd98f00b204e9800998ecf8427e}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMJ}
+      \field{number}{7070}
+      \field{title}{The Nuremberg Code (1947)}
+      \field{volume}{313}
+      \field{year}{1996}
+      \field{pages}{1448}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1136/bmj.313.7070.1448
+      \endverb
+      \verb{eprint}
+      \verb https://www.bmj.com/content/313/7070/1448.1
+      \endverb
+      \verb{urlraw}
+      \verb https://www.bmj.com/content/313/7070/1448.1
+      \endverb
+      \verb{url}
+      \verb https://www.bmj.com/content/313/7070/1448.1
+      \endverb
+    \endentry
+    \entry{Wettschereck1997}{article}{}
+      \name{author}{3}{}{%
+        {{hash=69fcc3aa8b34fe10d381875970b0678e}{%
+           family={Wettschereck},
+           familyi={W\bibinitperiod},
+           given={Dietrich},
+           giveni={D\bibinitperiod}}}%
+        {{hash=92a14ac89f93c224dc339aaaa178fd94}{%
+           family={Aha},
+           familyi={A\bibinitperiod},
+           given={David\bibnamedelima W},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=668d545f2d191160a711f3a77d790a91}{%
+           family={Mohri},
+           familyi={M\bibinitperiod},
+           given={Takao},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2f05537ed7debd45a402adb31103b092}
+      \strng{fullhash}{2f05537ed7debd45a402adb31103b092}
+      \strng{bibnamehash}{2f05537ed7debd45a402adb31103b092}
+      \strng{authorbibnamehash}{2f05537ed7debd45a402adb31103b092}
+      \strng{authornamehash}{2f05537ed7debd45a402adb31103b092}
+      \strng{authorfullhash}{2f05537ed7debd45a402adb31103b092}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artificial Intelligence Review}
+      \field{number}{1}
+      \field{title}{A review and empirical evaluation of feature weighting methods for a class of lazy learning algorithms}
+      \field{volume}{11}
+      \field{year}{1997}
+      \field{pages}{273\bibrangedash 314}
+      \range{pages}{42}
+    \endentry
+    \entry{Yang2019}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f05a1041b5396a87fd3d4f4d24dab652}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jiawei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=746e07d68d4a0799a6aa95287fa73e0a}{%
+           family={Rahardja},
+           familyi={R\bibinitperiod},
+           given={Susanto},
+           giveni={S\bibinitperiod}}}%
+        {{hash=614bb1650747649217741abb174af339}{%
+           family={Fränti},
+           familyi={F\bibinitperiod},
+           given={Pasi},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sanya, China}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{4a51e0f99556971d36f32340126d2d6c}
+      \strng{fullhash}{4a51e0f99556971d36f32340126d2d6c}
+      \strng{bibnamehash}{4a51e0f99556971d36f32340126d2d6c}
+      \strng{authorbibnamehash}{4a51e0f99556971d36f32340126d2d6c}
+      \strng{authornamehash}{4a51e0f99556971d36f32340126d2d6c}
+      \strng{authorfullhash}{4a51e0f99556971d36f32340126d2d6c}
+      \field{sortinit}{Y}
+      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Outlier detection is a fundamental issue in data mining and machine learning. Most methods calculate outlier score for each object and then threshold the scores to detect outliers. Most widely used thresholding techniques are based on statistics like standard deviation around mean, median absolute deviation and interquartile range. Unfortunately, these statistics can be significantly biased because of the presence of outliers when calculating these statistics. This makes their use inaccurate. To overcome this problem, we propose a two-stage thresholding method (2T). Most obvious outliers are first removed by using a more conservative threshold, and the same process is then repeated for the processed scores. Experiments show that this two-stage approach significantly improves the results of all the three existing thresholding techniques.}
+      \field{booktitle}{Proceedings of the International Conference on Artificial Intelligence, Information Processing and Cloud Computing}
+      \field{isbn}{9781450376334}
+      \field{series}{AIIPCC '19}
+      \field{title}{Outlier Detection: How to Threshold Outlier Scores?}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1145/3371425.3371427
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3371425.3371427
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3371425.3371427
+      \endverb
+      \keyw{standard deviation,anomaly detection,MAD,median absolute deviation,outlier detection,SD,two-stage threshold,interquartile range,error detection,IQR,novelty detection}
+    \endentry
+    \entry{Zhang2005}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=acd98f83dff73c7fb671bbcb6f325ece}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Min-Ling},
+           giveni={M\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=6b1a37e820a730061851a81dcca2d154}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Zhi-Hua},
+           giveni={Z\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{41482cb4b83815dc42dd4f5458314b88}
+      \strng{fullhash}{41482cb4b83815dc42dd4f5458314b88}
+      \strng{bibnamehash}{41482cb4b83815dc42dd4f5458314b88}
+      \strng{authorbibnamehash}{41482cb4b83815dc42dd4f5458314b88}
+      \strng{authornamehash}{41482cb4b83815dc42dd4f5458314b88}
+      \strng{authorfullhash}{41482cb4b83815dc42dd4f5458314b88}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2005 IEEE international conference on granular computing}
+      \field{title}{A k-nearest neighbor based algorithm for multi-label classification}
+      \field{volume}{2}
+      \field{year}{2005}
+      \field{pages}{718\bibrangedash 721}
+      \range{pages}{4}
+    \endentry
+    \entry{Zong2018}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=fa17088713016483cd789ed308852706}{%
+           family={Zong},
+           familyi={Z\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c9f07a10780b877a43e45ae758e3a2c8}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=c043a6509cea44ba9c36e2dcd818210f}{%
+           family={Min},
+           familyi={M\bibinitperiod},
+           given={Martin\bibnamedelima Renqiang},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=6daab9c045b3d0fc9e6183326e04b8ff}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6a8f11ab7bcf4bd4ee476893e4ad01d2}{%
+           family={Lumezanu},
+           familyi={L\bibinitperiod},
+           given={Cristian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e024c9fb66fcc65f727d1e8bfd79dac6}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Dae-ki},
+           giveni={D\bibinithyphendelim k\bibinitperiod}}}%
+        {{hash=926fadd55a76a91ffa27192d3607797f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Haifeng},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {OpenReview.net}%
+      }
+      \strng{namehash}{2aed100f4d009378e5394efa5eff9d71}
+      \strng{fullhash}{bd664afc40083718797c46fb315a6525}
+      \strng{bibnamehash}{2aed100f4d009378e5394efa5eff9d71}
+      \strng{authorbibnamehash}{2aed100f4d009378e5394efa5eff9d71}
+      \strng{authornamehash}{2aed100f4d009378e5394efa5eff9d71}
+      \strng{authorfullhash}{bd664afc40083718797c46fb315a6525}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{6th International Conference on Learning Representations, {ICLR} 2018, Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings}
+      \field{title}{Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://openreview.net/forum?id=BJJLHbb0-
+      \endverb
+      \verb{url}
+      \verb https://openreview.net/forum?id=BJJLHbb0-
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
