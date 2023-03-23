@@ -36,8 +36,8 @@
 \author{Hayley Davies - 1902055}
 
 \maketitle
-\footnote{Source code for all algorithms is availible on GitHub: \url{https://github.com/cdgamedev/dissertation}}
-\footnote{Source \LaTeX is availble on Falmouth GitHub: \url{https://github.falmouth.ac.uk/Games-Academy-Student-Work-22-23/1902055-comp3xx-dissertation}}
+\footnote{Source code for all algorithms is available on GitHub: \url{https://github.com/cdgamedev/dissertation}}
+\footnote{Source \LaTeX is available on Falmouth GitHub: \url{https://github.falmouth.ac.uk/Games-Academy-Student-Work-22-23/1902055-comp3xx-dissertation}}
 
 \begin{abstract}
 Massively Multiplayer Online games are a hugely popular and successful subsection of the gaming industry. These games allow players to trade items within the game, but some players choose to buy and sell in-game items for real-world money, known as Real Money Trading. This leads to people preferring to buy from illicit sources rather than through the game itself, resulting in a loss of revenue for the developers. Additionally, this practice enables people to make money through methods such as botting, account theft, or cheating.
@@ -47,9 +47,8 @@ Massively Multiplayer Online games are a hugely popular and successful subsectio
 Anomaly Detection, Massively Multiplayer Online, Real Money Trading
 \end{IEEEkeywords}
 
-
 \section{Introduction}
-\IEEEPARstart{R}{eal-Money} Trading (RMT) is the practice of buying and selling virtual items and currency within massively multiplayer online (MMO) video games. This practice often violates the games' Terms of Service or Code of Conduct\cite{AmazonGamesCOC}\cite{SquareEnixCOC}, and as a result, players who engage in RMT are often at risk of being banned from the game. RMT has negative effects on the game's economy and community, and it is therefore discouraged by game developers and players alike.
+\IEEEPARstart{R}{eal-Money} Trading (RMT) is the practice of buying and selling virtual items and currency within massively multiplayer online (MMO) video games. This practice often violates the games' Terms of Service or Code of Conduct\cite{AmazonGamesCOC}\cite{SquareEnixCOC}, and as a result, players who engage in RMT are often at risk of being banned from the game. RMT has negative effects on the game's economy and community, and it is therefore discouraged by game developers and players alike. The solution to this issue is anomaly detection algorithms. These are useful in serveral facets of computer science and this paper will discuss the use of these algorithms and compare different anomaly detection algorithms which utilise Standard Deviation.
 
 \section{Literature Review}
 \subsection{Anomaly Detection for RMT}
@@ -126,10 +125,10 @@ By answering these, game developers working on MMO titles can easily identify an
 
 \section{Hypotheses}
 \subsection{Which anomaly detection algorithm is the most performant for peer-to-peer transactions within MMOs?}
-\noindent Following research conducted, for data specifically from Lost Ark, a simple method which doesn't require training data is most likely to be best. The 2T algorithm\cite{Yang2019} could be beneficial for a dataset which has 4 features. As the data from Lost Ark requires only 4 features, a more complex algorithm likely isn't required. 
+\noindent Following research conducted, for data specifically from Lost Ark, a simple method which doesn't require training data is most likely to be best. The 2T algorithm\cite{Yang2019} could be beneficial for a dataset which has a small number of features as the data from Lost Ark requires only 2 features, a more complex algorithm likely isn't required.
 
 \subsection{Can most fraudulent transactions be found using anomaly detection algorithms?}
-\noindent Due to the fact that the dataset used cannot be labelled, it will be difficult to know for certain if the algorithms function to detect all fraudulent transactions. If a data point is out of range then an algorithm, assuming the correct settings, will be able to correctly identify all anomalous transactions. However, it could also incorrectly detect real transactions in the event that the price of a gem fluctuates for legitimate reasons. The main concern is that people will understand that spending 100,000 Gold on a Gem that shouldn't be worth that price will be flagged, and therefore, they sell several invaluable gems for fractions of that price. This will go unnoticed by any algorithm using the chosen features.
+\noindent Due to the fact that the dataset used cannot be labelled, it will be difficult to quantify if the algorithms function to detect all fraudulent transactions in the dataset. If a data point is out of range then the algorithm, assuming the correct settings, will be able to correctly identify all anomalous transactions. However, not all fraudulent transactions are anomalous and therefore, legitimate transactions could be detected as fraudulent. RMTers could also realise that selling a 5 Gold Gem for 100,000 Gold is unreasonable, and therefore they can adapt strategies and sell thousands of Gems for 8 or 9 Gold and still profit substatially.
 
 \section{Computing Artefact}
 \subsection{Game Background}
@@ -145,11 +144,18 @@ By answering these, game developers working on MMO titles can easily identify an
 
 For this research, an anomaly detection algorithm would utilize 4 factors; Level, Tier, Sale Price and Sale Date. This should be enough for a basis to detect prices which are too high at any given time. It also allows us to investigate fluctuations in price of gems over time which could be due to various factors in the game, such as events which inflate the number of gems within the game through increased drop rates of gems, gem giveaways or a change in the number of players which leads to less supply/demand.
 
-\subsection{Proposed Algorithm}
-\noindent A simple algorithm to detect anomalies within a dataset range would work by calculating the average value and standard deviation of the data. These two values are used to ensure that the data is within a standard deviation threshold of the average value. In Python the algorithm could look like this:
-\lstinputlisting[language=python]{algorithms/detect-anomalies.py}
+\subsection{Detection Algorithms}
+\lstinputlisting[language=python]{algorithms/clever_sd.py}
+
+\lstinputlisting[language=python]{algorithms/twostage_sd.py}
+
+\lstinputlisting[language=python]{algorithms/mean_sd.py}
+
+\lstinputlisting[language=python]{algorithms/median_sd.py}
 
 \section{Data Collection Methodology}
+NOTE: SOME DATA FOR 2022.11.03 IS MISSING DUE TO FILE CORRUPTION.
+
 \subsection{Internal Data}
 \noindent The best method of gathering data, is to contact the developers directly. The developer's internal policy could impact the ability to get the raw data from them directly. They may log a lot more data than is publicly accessible via the marketplace, for example, the internal data could contain account identifying information.
 
@@ -184,6 +190,8 @@ Using this data, humans can easily recognise when a sale price for a specific le
 \section{Validation and Verification}
 \noindent Without having a labelled dataset, it will be difficult to accurately verify anomalous transactions using an algorithm. However, by utilising different algorithms for the testing of data, it is possible to check overlapping anomalies between different algorithms. This will allow for the verification that a data point is anomalous.
 
+The algorithms can also be validated by running them multiple times. As computation is likely to be nearly instantaneous running on modern machines, running it hundereds of times, the time to run the algorithms can be calculated more accurately. To ensure accuracy and authenticity
+
 \subsection{Verifying Algorithms by Comparing Results of Different Algorithms}
 \noindent Comparing the results is a way in which the data can be validated. By assigning each gem with a unique value based on its location within the database we can check each gem for its occurrence as an anomaly across multiple algorithms. An example in Python would look like this:
 \lstinputlisting[language=python]{algorithms/compare-algorithms.py}
@@ -195,13 +203,13 @@ This method, however, suffers from a problem where anomalies which aren't detect
 
 \section{Considerations}
 \subsection{Legal}
-\noindent [INSERT SECTION]
+\noindent Smilegate, the developers of Lost Ark, didn't explicitly give permission for their dataset to use be used in this paper, however, it doesn't breach their Code of Concuct\cite{AmazonGamesCOC}. This dataset is also available
 
 \subsection{Ethical}
-\noindent The data processed in the paper is gathered directly from Lost Ark's public marketplace where Smilegate likely already follow data anomyization practices\cite{Gruschka2018}. The data gathered doesn't contain identifiable information and therefore conforms to both General Data Protection Regulation (GDPR) and the Nuremberg Code\cite{Nuremberg1947}.
+\noindent The data processed in the paper is gathered directly from Lost Ark's public marketplace where Smilegate likely already follow data anomyization practices\cite{Gruschka2018}. The data gathered doesn't contain identifiable information and therefore conforms to both General Data Protection Regulation (GDPR) and the Nuremberg Code\cite{Nuremberg1947}. As this papers research is carried out at Falmouth University, it also follows the Research Policy\cite{FalmouthEthicsPolicy2022}.
 
 \subsection{Professional}
-\noindent [INSERT SECTION]
+\noindent Professionally, it's important that this paper follows the BCS Code of Conduct\cite{BCSCodeOfConduct2022}. This includes working for the public interest by outlining solutions to current problems rather than ways to make current problems worse.
 
 \section{Results and Analysis}
 \noindent [INSERT SECTION]

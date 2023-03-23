@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.12)  7 MAR 2023 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.12)  23 MAR 2023 00:26
 entering extended mode
 **d:/1902055-comp3xx-dissertation/dissertation-1902055.tex
 (d:/1902055-comp3xx-dissertation/dissertation-1902055.tex
@@ -682,31 +682,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [2] (C:\Users\Hayley\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (d:/1902055-comp3xx-dissertation\algorithms/detect-anomalies.py
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 10.
+) (d:/1902055-comp3xx-dissertation\algorithms/clever_sd.py
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 14.
  (C:\Users\Hayley\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ptm on input line 16.
+LaTeX Font Info:    Trying to load font information for OML+ptm on input line 25.
  (C:\Users\Hayley\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 16.
-) [3]
-<./figures//auction-house-before.png, id=280, 1676.2625pt x 858.20625pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 25.
+ [3]) (d:/1902055-comp3xx-dissertation\algorithms/twostage_sd.py) (d:/1902055-comp3xx-dissertation\algorithms/mean_sd.py) (d:/1902055-comp3xx-dissertation\algorithms/median_sd.py) [4]
+<./figures//auction-house-before.png, id=401, 1676.2625pt x 858.20625pt>
 File: ./figures//auction-house-before.png Graphic file (type png)
 <use ./figures//auction-house-before.png>
-Package pdftex.def Info: ./figures//auction-house-before.png  used on input line 172.
+Package pdftex.def Info: ./figures//auction-house-before.png  used on input line 178.
 (pdftex.def)             Requested size: 209.5323pt x 107.27551pt.
-
-Underfull \vbox (badness 1762) has occurred while \output is active []
-
-<./figures//auction-house-after.png, id=281, 803.0pt x 858.20625pt>
+<./figures//auction-house-after.png, id=402, 803.0pt x 858.20625pt>
 File: ./figures//auction-house-after.png Graphic file (type png)
 <use ./figures//auction-house-after.png>
-Package pdftex.def Info: ./figures//auction-house-after.png  used on input line 179.
+Package pdftex.def Info: ./figures//auction-house-after.png  used on input line 185.
 (pdftex.def)             Requested size: 200.74951pt x 214.55104pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  (d:/1902055-comp3xx-dissertation\algorithms/compare-algorithms.py
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 2.
  (C:\Users\Hayley\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsptm.fd
@@ -714,49 +714,51 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
- [4 <./figures//auction-house-before.png (PNG copy)> <./figures//auction-house-after.png (PNG copy)>])
-Underfull \hbox (badness 2818) in paragraph at lines 214--214
+ [5 <./figures//auction-house-before.png (PNG copy)> <./figures//auction-house-after.png (PNG copy)>])
+Underfull \hbox (badness 2818) in paragraph at lines 222--222
 []\OT1/ptm/m/n/10 Mohiuddin Ahmed, Ab-dun Naser Mah-mood, and
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 213.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 221.
 (C:\Users\Hayley\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 2875) in paragraph at lines 214--214
+Underfull \hbox (badness 2875) in paragraph at lines 222--222
 []\OT1/ptm/m/n/10 Hilmi E Egilmez and An-to-nio Or-tega. ``Spec-tral
  []
 
-[5]
-Underfull \hbox (badness 1859) in paragraph at lines 214--214
+
+Underfull \hbox (badness 1460) in paragraph at lines 222--222
+\OT1/ptm/m/n/10 downloads / research[]integrity[]and[]ethics[]policy[]for[]
+ []
+
+[6]
+Underfull \hbox (badness 1859) in paragraph at lines 222--222
 []\OT1/ptm/m/n/10 Praveen Ku-mar Sadi-neni. \OT1/ptm/m/it/10 De-tec-tion of Fraud-u-lent
  []
 
-(d:/1902055-comp3xx-dissertation\algorithms/image-formatter.py [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) (d:/1902055-comp3xx-dissertation\algorithms/image-processor.py [7]
+[7] (d:/1902055-comp3xx-dissertation\algorithms/image-formatter.py) (d:/1902055-comp3xx-dissertation\algorithms/image-processor.py [8]
 LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <8> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 72.
-) [8] (d:/1902055-comp3xx-dissertation\dissertation-1902055.aux)
+) [9] (d:/1902055-comp3xx-dissertation\dissertation-1902055.aux)
 Package rerunfilecheck Info: File `dissertation-1902055.out' has not changed.
-(rerunfilecheck)             Checksum: 406B8B0E51ECD5051C26BD01BA0F3C8F;2457.
+(rerunfilecheck)             Checksum: 9B57838E7EDB9B7018A036A98C82D5DD;2459.
 Package logreq Info: Writing requests to 'dissertation-1902055.run.xml'.
 \openout1 = `dissertation-1902055.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17482 strings out of 480257
- 307998 string characters out of 2880965
- 1845848 words of memory out of 3000000
- 33406 multiletter control sequences out of 15000+200000
- 578241 words of font info for 109 fonts, out of 3000000 for 9000
+ 17633 strings out of 480257
+ 310656 string characters out of 2880965
+ 1795364 words of memory out of 3000000
+ 33429 multiletter control sequences out of 15000+200000
+ 578574 words of font info for 110 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 60i,8n,67p,1705b,2000s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,8n,67p,1705b,2067s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d:/1902055-comp3xx-dissertation\dissertation-1902055.pdf (8 pages, 1299471 bytes).
+Output written on d:/1902055-comp3xx-dissertation\dissertation-1902055.pdf (9 pages, 1325312 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
- 356 named destinations out of 1000 (max. 500000)
+ 886 PDF objects out of 1000 (max. 8388607)
+ 474 named destinations out of 1000 (max. 500000)
  283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

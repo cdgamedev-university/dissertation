@@ -2396,8 +2396,11 @@
     <bcf:citekey order="44">Maxroll2022</bcf:citekey>
     <bcf:citekey order="45">LostArkStove2019</bcf:citekey>
     <bcf:citekey order="46">GIPA2020kr</bcf:citekey>
-    <bcf:citekey order="47">Gruschka2018</bcf:citekey>
-    <bcf:citekey order="48">Nuremberg1947</bcf:citekey>
+    <bcf:citekey order="47">AmazonGamesCOC</bcf:citekey>
+    <bcf:citekey order="48">Gruschka2018</bcf:citekey>
+    <bcf:citekey order="49">Nuremberg1947</bcf:citekey>
+    <bcf:citekey order="50">FalmouthEthicsPolicy2022</bcf:citekey>
+    <bcf:citekey order="51">BCSCodeOfConduct2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -285,6 +285,36 @@
       \verb 10.1145/342009.335388
       \endverb
     \endentry
+    \entry{BCSCodeOfConduct2022}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3558553337bfc9de5eb336ef6c74a69d}{%
+           family={{British Computer Society}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3558553337bfc9de5eb336ef6c74a69d}
+      \strng{fullhash}{3558553337bfc9de5eb336ef6c74a69d}
+      \strng{bibnamehash}{3558553337bfc9de5eb336ef6c74a69d}
+      \strng{authorbibnamehash}{3558553337bfc9de5eb336ef6c74a69d}
+      \strng{authornamehash}{3558553337bfc9de5eb336ef6c74a69d}
+      \strng{authorfullhash}{3558553337bfc9de5eb336ef6c74a69d}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{title}{Research Integrity And Ethics Policy For Taught Courses}
+      \field{urlday}{8}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf
+      \endverb
+    \endentry
     \entry{Buzzi2011}{article}{}
       \name{author}{2}{}{%
         {{hash=a42beabcd863707018aea83efc49daf4}{%
@@ -407,6 +437,36 @@
       \field{year}{2014}
       \field{pages}{1085\bibrangedash 1089}
       \range{pages}{5}
+    \endentry
+    \entry{FalmouthEthicsPolicy2022}{online}{}
+      \name{author}{1}{}{%
+        {{hash=05c90723ceb7aea5892bed841d60bd1b}{%
+           family={{Falmouth University}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{05c90723ceb7aea5892bed841d60bd1b}
+      \strng{fullhash}{05c90723ceb7aea5892bed841d60bd1b}
+      \strng{bibnamehash}{05c90723ceb7aea5892bed841d60bd1b}
+      \strng{authorbibnamehash}{05c90723ceb7aea5892bed841d60bd1b}
+      \strng{authornamehash}{05c90723ceb7aea5892bed841d60bd1b}
+      \strng{authorfullhash}{05c90723ceb7aea5892bed841d60bd1b}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Website}
+      \field{title}{Research Integrity And Ethics Policy For Taught Courses}
+      \field{urlday}{8}
+      \field{urlmonth}{12}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.falmouth.ac.uk/sites/default/files/media/downloads/research_integrity_and_ethics_policy_for_taught_courses.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.falmouth.ac.uk/sites/default/files/media/downloads/research_integrity_and_ethics_policy_for_taught_courses.pdf
+      \endverb
     \endentry
     \entry{Fujita2011}{inproceedings}{}
       \name{author}{3}{}{%

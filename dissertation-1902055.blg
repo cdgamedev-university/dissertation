@@ -1,19 +1,19 @@
 [0] Config.pm:312> INFO - This is Biber 2.15 (beta)
 [0] Config.pm:315> INFO - Logfile is 'dissertation-1902055.blg'
-[91] biber-MSWIN64:330> INFO - === 
-[109] Biber.pm:415> INFO - Reading 'dissertation-1902055.bcf'
-[217] Biber.pm:952> INFO - Found 36 citekeys in bib section 0
-[234] Biber.pm:4334> INFO - Processing section 0
-[248] Biber.pm:4523> INFO - Looking for bibtex format file 'references.bib' for section 0
-[258] bibtex.pm:1682> INFO - LaTeX decoding ...
-[334] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[392] Utils.pm:395> WARN - month field 'Aug' in entry 'Ahmad2009' is not an integer - this will probably not sort properly.
-[519] Utils.pm:395> WARN - month field 'Jun' in entry 'Dibbell2007' is not an integer - this will probably not sort properly.
-[540] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[588] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[589] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[589] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[589] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[637] bbl.pm:651> INFO - Writing 'dissertation-1902055.bbl' with encoding 'UTF-8'
-[661] bbl.pm:754> INFO - Output to dissertation-1902055.bbl
-[661] Biber.pm:128> INFO - WARNINGS: 3
+[84] biber-MSWIN64:330> INFO - === 
+[102] Biber.pm:415> INFO - Reading 'dissertation-1902055.bcf'
+[203] Biber.pm:952> INFO - Found 38 citekeys in bib section 0
+[219] Biber.pm:4334> INFO - Processing section 0
+[233] Biber.pm:4523> INFO - Looking for bibtex format file 'references.bib' for section 0
+[244] bibtex.pm:1682> INFO - LaTeX decoding ...
+[323] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[378] Utils.pm:395> WARN - month field 'Aug' in entry 'Ahmad2009' is not an integer - this will probably not sort properly.
+[498] Utils.pm:395> WARN - month field 'Jun' in entry 'Dibbell2007' is not an integer - this will probably not sort properly.
+[528] Utils.pm:395> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[576] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[576] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[576] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[621] bbl.pm:651> INFO - Writing 'dissertation-1902055.bbl' with encoding 'UTF-8'
+[644] bbl.pm:754> INFO - Output to dissertation-1902055.bbl
+[644] Biber.pm:128> INFO - WARNINGS: 3
