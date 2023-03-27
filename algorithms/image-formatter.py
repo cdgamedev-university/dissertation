@@ -1,13 +1,11 @@
 import os
 from PIL import Image, ImageEnhance, ImageOps, ImageFilter
 import numpy as np
-
 # input and output of the images
 INPUT_LOCATION = "original-screenshots"
 OUTPUT_LOCATION = "output-screenshots"
-
 # the crop locations for the images (x pos, width)
-IMAGE_CROPS = [(1405, 25), (700, 500), (222, 210), (0, 130)]
+IMAGE_CROPS = [(1270, 30), (570, 500), (90, 210)]
 # output width of the images (retain original height)
 IMAGE_OUTPUT_WIDTH = 800
 
@@ -15,7 +13,6 @@ IMAGE_OUTPUT_WIDTH = 800
 def image_crop_column(img, crop):
     # get the starting pos
     crop_x, crop_width = crop
-    
     # convert the image to an array
     img_arr = np.array(img)
     # move the data from the crop_width to the current x value
@@ -32,20 +29,15 @@ def image_resize(img):
 
 # apply effects to the image
 def apply_effect(img):
-    # reduce the contrast
-    enhancer = ImageEnhance.Contrast(img)
+    enhancer = ImageEnhance.Brightness(img)
+    output = enhancer.enhance(1)
+    enhancer = ImageEnhance.Contrast(output)
     output = enhancer.enhance(0.8)
-    
-    # reduce the bits per pixel to 1
     output = ImageOps.posterize(output, 1)
-    
-    # enhance the edges
     output = output.filter(ImageFilter.EDGE_ENHANCE_MORE)
-    
-    # invert the images' colours
+    enhancer = ImageEnhance.Sharpness(output)
+    output = enhancer.enhance(1)
     output = ImageOps.invert(output)
-    
-    # return the final image
     return output
 
 # for all files in the directory

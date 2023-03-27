@@ -1,6 +1,7 @@
 \documentclass[journal]{IEEEtran}
 \usepackage{amsmath,amsfonts}
 \usepackage{algorithmic}
+\usepackage{xcolor}
 \usepackage{array}
 \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
 \usepackage{textcomp}
@@ -15,19 +16,34 @@
 \usepackage{balance}
 \usepackage{biblatex}
 \usepackage{listings}
-\lstset{
-    basicstyle=\footnotesize,
-    numbers=left,
-    xleftmargin=2em,
-    stepnumber=1,
-    showstringspaces=false,
-    tabsize=1,
-    breaklines=true,
-    breakatwhitespace=false,
-    frame=single
-}
 \usepackage{float}
 \usepackage{hyperref}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
 
 \addbibresource{references.bib}
 
@@ -145,15 +161,27 @@ By answering these, game developers working on MMO titles can easily identify an
 For this research, an anomaly detection algorithm would utilize 4 factors; Level, Tier, Sale Price and Sale Date. This should be enough for a basis to detect prices which are too high at any given time. It also allows us to investigate fluctuations in price of gems over time which could be due to various factors in the game, such as events which inflate the number of gems within the game through increased drop rates of gems, gem giveaways or a change in the number of players which leads to less supply/demand.
 
 \subsection{Detection Algorithms}
-\lstinputlisting[language=python]{algorithms/clever_sd.py}
+For this paper, 4 different algorithms were written which can detect anomalies. These revolve around checking each data point and if the deviance of that data point is within a specific range. All results from these algorithms, use a constant threshold which scales to the remaining dataset. This initial threshold has not been tailored per algorithm.
 
-\lstinputlisting[language=python]{algorithms/twostage_sd.py}
+\subsubsection{Two Stage Thresholding Algorithm}
+Figure \ref{algorithm:2t} showcases the 2T algorithm written for use within this paper. This algorithm is recursive and follows the general function outlined by Yang\cite{Yang2019} in their original algorithm. This algorithm works similarly to the Mean Standard Deviation with its main change being that it runs recursively.
 
-\lstinputlisting[language=python]{algorithms/mean_sd.py}
+\subsubsection{Clever SD Algorithm}
+Figure \ref{algorithm:clever-sd} showcases the Clever SD algorithm written for use within this paper. This algorithm is recursive and follows the general function outlined by Buzzi\cite{Buzzi2011} in their original algorithm. This algorithm removes a single anomaly per function call until all anomalies have been removed.
 
-\lstinputlisting[language=python]{algorithms/median_sd.py}
+\subsubsection{Mean Standard Deviation Algorithm}
+Figure \ref{algorithm:sd-mean} showcases a function for standard deviaion around the mean. This is a common approach and checks if all datapoints are in range. If they are outside of the range, they are added to the anomalies array and the anomalies array is returned after the function is finished.
+
+\subsubsection{Median Standard Deviation Algorithm}
+Figure \ref{algorithm:sd-median} showcases a function for standard deviaion around the median. This is a common approach and checks if all datapoints are in range. If they are outside of the range, they are added to the anomalies array and the anomalies array is returned after the function is finished.
 
 \section{Data Collection Methodology}
+\begin{figure*}[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/auction-house-before.png}
+    \caption{Auction house screenshot before image processing.}
+    \label{figure:auction-house-before}
+\end{figure*}
 NOTE: SOME DATA FOR 2022.11.03 IS MISSING DUE TO FILE CORRUPTION.
 
 \subsection{Internal Data}
@@ -163,22 +191,9 @@ NOTE: SOME DATA FOR 2022.11.03 IS MISSING DUE TO FILE CORRUPTION.
 \noindent In Korea, a public resource exist which allows users to view trasactional data across the entire auction house\cite{LostArkStove2019}. However, this website is inaccessible without name and age verification, due Korea's Game Industry Promotion Act\cite{GIPA2020kr}.
 
 \subsection{In-game Data}
-\noindent Another method for data collection surrounds screenshotting pages from the Sale History of Gems from Lost Ark's Marketplace, as seen in Figure \ref{figure:auction-house-before}. Then, the screenshot is cropped to remove the Gem Name, Starting Bid and Quality fields and converted to a greyscale image along with other image manipulation techniques to ensure clear text, shown in Figure \ref{figure:auction-house-after} (see Algorithm \ref{algorithm:image-formatter}).
+\noindent Another method for data collection surrounds screenshotting pages from the Sale History of Gems from Lost Ark's Marketplace, as seen in Figure \ref{figure:auction-house-before}. Then, the screenshot is cropped to remove the Gem Name, Starting Bid and Quality fields and converted to a greyscale image along with other image manipulation techniques to ensure clear text, shown in Figure \ref{figure:auction-house-after} (see Figure \ref{algorithm:image-formatter}).
 
-Optical character recognition (OCR) is then used on the image and checked automatically for any errors (see Algorithm \ref{algorithm:image-processor}). The data can then be randomly sampled and manually reviewed to ensure the accuracy of the data following this process. Due to the nature in which this algorithm works, unreadable data will be logged in the saved file as a "-" alongside its page and entry numbers, making the issue much quicker to rectify.
-
-Removing the name is done as this has no bearing on the price of a gem. Removing the Starting Bid field is done because the Starting Bid is optional when adding a gem to the marketplace, it is also not indicative of RMT. Instead, for the RMT transaction to occur correctly, Gems have a Buy Now Price set to a specific value. Removing the Quality field is done since gems don't have a quality value; this is always "-".
-
-A consideration which could also affect the price of Gems is the "Gem Effect". This is a specific ability that Gem does to impact a character's Damage or Cooldown Time on a specific move. However, the Gem Effect is optionally rerolled within the game player. Rerolling requires the use of Silver, a much easier resource to gather, so this doesn't have a huge impact on the price of the gem.
-
-Using this data, humans can easily recognise when a sale price for a specific level/tier gem is too high compared to other gems being sold at around the same time.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.125]{auction-house-before}
-    \caption{Auction house screenshot before image processing.}
-    \label{figure:auction-house-before}
-\end{figure}
+Optical character recognition (OCR) is then used on the image and checked automatically for any errors (see Figure \ref{algorithm:image-processor}). The data can then be randomly sampled and manually reviewed to ensure the accuracy of the data following this process. Due to the nature in which this algorithm works, unreadable data will be logged in the saved file as a "-" alongside its page and entry numbers, making the issue much quicker to rectify.
 
 \begin{figure}[H]
     \centering
@@ -187,19 +202,21 @@ Using this data, humans can easily recognise when a sale price for a specific le
     \label{figure:auction-house-after}
 \end{figure}
 
+Removing the name is done as this has no bearing on the price of a gem. Removing the Starting Bid field is done because the Starting Bid is optional when adding a gem to the marketplace, it is also not indicative of RMT. Instead, for the RMT transaction to occur correctly, Gems have a Buy Now Price set to a specific value. Removing the Quality field is done since gems don't have a quality value; this is always "-".
+
+A consideration which could also affect the price of Gems is the "Gem Effect". This is a specific ability that Gem does to impact a character's Damage or Cooldown Time on a specific move. However, the Gem Effect is optionally rerolled within the game player. Rerolling requires the use of Silver, a much easier resource to gather, so this doesn't have a huge impact on the price of the gem.
+
+Using this data, humans can easily recognise when a sale price for a specific level/tier gem is too high compared to other gems being sold at around the same time.
+
 \section{Validation and Verification}
 \noindent Without having a labelled dataset, it will be difficult to accurately verify anomalous transactions using an algorithm. However, by utilising different algorithms for the testing of data, it is possible to check overlapping anomalies between different algorithms. This will allow for the verification that a data point is anomalous.
 
 The algorithms can also be validated by running them multiple times. As computation is likely to be nearly instantaneous running on modern machines, running it hundereds of times, the time to run the algorithms can be calculated more accurately. To ensure accuracy and authenticity
 
 \subsection{Verifying Algorithms by Comparing Results of Different Algorithms}
-\noindent Comparing the results is a way in which the data can be validated. By assigning each gem with a unique value based on its location within the database we can check each gem for its occurrence as an anomaly across multiple algorithms. An example in Python would look like this:
-\lstinputlisting[language=python]{algorithms/compare-algorithms.py}
+\noindent Comparing the results is a way in which the data can be validated. By assigning each gem with a unique value based on its location within the database we can check each gem for its occurrence as an anomaly across multiple algorithms. An example in Python would look like \ref{algorithm:algorithm-comparison}
 
 This method, however, suffers from a problem where anomalies which aren't detected by any algorithm won't be verified at all, leading to a reduced accuracy rate.
-
-\section{Research Methodolody}
-\noindent [INSERT SECTION]
 
 \section{Considerations}
 \subsection{Legal}
@@ -212,7 +229,32 @@ This method, however, suffers from a problem where anomalies which aren't detect
 \noindent Professionally, it's important that this paper follows the BCS Code of Conduct\cite{BCSCodeOfConduct2022}. This includes working for the public interest by outlining solutions to current problems rather than ways to make current problems worse.
 
 \section{Results and Analysis}
-\noindent [INSERT SECTION]
+\noindent Figures \ref{graph:gem-datasize}, \ref{graph:anomalies-per-algorithm} and \ref{graph:time-taken-per-algorithm} showcase the results found from running the aforementioned algorithms, 2T, Clever SD, Mean SD and Median SD. In these graphs, Gem Number is used as a quick comparital measure between two merged properies each gem has. A Tier 2 Level 1 Gem is labelled as Gem Number 1 and a Tier 3 Level 1 Gem is labelled as Gem Number 11. Each gem tier has 10 levels, meaning, a Tier 2 Level 5 Gem is Gem Number 5 and a Tier 3 Level 5 Gem is Gem Number 15.
+
+The data in Figure \ref{graph:gem-datasize} showcases the total size of the datasets - or gems sold - throughout the period 25th August 2022 until 29th December 2022. Overall, 14928 transactions were recorded for this paper. The trends shown in this graph help quantify the data shown in \ref{graph:anomalies-per-algorithm}.
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.25]{figures/graph-gem-datasize.png}
+    \caption{Graph showing the dataset size for each gem type.}
+    \label{graph:gem-datasize}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.25]{figures/graph-per-algorithm.png}
+    \caption{Graph showing the number of anomalies found for each gem depending upon the algorithm.}
+    \label{graph:anomalies-per-algorithm}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.25]{figures/graph-time-taken-per-element.png}
+    \caption{Graph showing the average computation time for different algorithms on each dataset.}
+    \label{graph:time-taken-per-algorithm}
+\end{figure}
 
 \section{Disccussion}
 \noindent [INSERT SECTION]
@@ -220,15 +262,52 @@ This method, however, suffers from a problem where anomalies which aren't detect
 \section{References Section}
 \printbibliography
 
+\clearpage
 \begin{appendices}
     \section{Data Collection Code Samples}
     \label{appendix:collection-code}
-    \subsection{image-formatter.py to turn auction house screenshots into OCR readable images.}
-    \label{algorithm:image-formatter}
+    
+    \lstinputlisting[language=python]{algorithms/compare-algorithms.py}
+    \begin{figure}[hbt!]
+        \caption{Comparison Algorithm.}
+        \label{algorithm:algorithm-comparison}
+    \end{figure}
+
+    \lstinputlisting[language=python]{algorithms/clever_sd.py}
+    \begin{figure}[hbt!]
+        \caption{CleverSD Algorithm.}
+        \label{algorithm:clever-sd}
+    \end{figure}
+    
+    \lstinputlisting[language=python]{algorithms/twostage_sd.py}
+    \begin{figure}[hbt!]
+        \caption{2T Algorithm.}
+        \label{algorithm:2t}
+    \end{figure}
+    
+    \lstinputlisting[language=python]{algorithms/mean_sd.py}
+    \begin{figure}[hbt!]
+        \caption{Standard Deviation (Mean) Algorithm.}
+        \label{algorithm:sd-mean}
+    \end{figure}
+    
+    \lstinputlisting[language=python]{algorithms/median_sd.py}
+    \begin{figure}[hbt!]
+        \caption{Standard Deviation (Median) Algorithm.}
+        \label{algorithm:sd-median}
+    \end{figure}
+
     \lstinputlisting[language=python]{algorithms/image-formatter.py}
-    \subsection{image-processor.py to turn images into csv files based on the dataset date.}
-    \label{algorithm:image-processor}
+    \begin{figure}[hbt!]
+        \caption{Image Formatter Algorithm.}
+        \label{algorithm:image-formatter}
+    \end{figure}
+
     \lstinputlisting[language=python]{algorithms/image-processor.py}
+    \begin{figure}[hbt!]
+        \caption{Image Processor Algorithm.}
+        \label{algorithm:image-processor}
+    \end{figure}
 \end{appendices}
 
 \end{document}

@@ -2394,13 +2394,15 @@
     <bcf:citekey order="42">Yang2019</bcf:citekey>
     <bcf:citekey order="43">LostArk2019</bcf:citekey>
     <bcf:citekey order="44">Maxroll2022</bcf:citekey>
-    <bcf:citekey order="45">LostArkStove2019</bcf:citekey>
-    <bcf:citekey order="46">GIPA2020kr</bcf:citekey>
-    <bcf:citekey order="47">AmazonGamesCOC</bcf:citekey>
-    <bcf:citekey order="48">Gruschka2018</bcf:citekey>
-    <bcf:citekey order="49">Nuremberg1947</bcf:citekey>
-    <bcf:citekey order="50">FalmouthEthicsPolicy2022</bcf:citekey>
-    <bcf:citekey order="51">BCSCodeOfConduct2022</bcf:citekey>
+    <bcf:citekey order="45">Yang2019</bcf:citekey>
+    <bcf:citekey order="46">Buzzi2011</bcf:citekey>
+    <bcf:citekey order="47">LostArkStove2019</bcf:citekey>
+    <bcf:citekey order="48">GIPA2020kr</bcf:citekey>
+    <bcf:citekey order="49">AmazonGamesCOC</bcf:citekey>
+    <bcf:citekey order="50">Gruschka2018</bcf:citekey>
+    <bcf:citekey order="51">Nuremberg1947</bcf:citekey>
+    <bcf:citekey order="52">FalmouthEthicsPolicy2022</bcf:citekey>
+    <bcf:citekey order="53">BCSCodeOfConduct2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
