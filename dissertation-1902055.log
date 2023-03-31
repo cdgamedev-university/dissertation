@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.12)  31 MAR 2023 01:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.12)  31 MAR 2023 01:17
 entering extended mode
 **d:/1902055-comp3xx-dissertation/dissertation-1902055.tex
 (d:/1902055-comp3xx-dissertation/dissertation-1902055.tex
@@ -696,66 +696,61 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ] [2]
-<./figures//graph-gem-sale-prices.png, id=271, 905.3825pt x 552.56438pt>
+<./figures//graph-gem-sale-prices.png, id=268, 905.3825pt x 552.56438pt>
 File: ./figures//graph-gem-sale-prices.png Graphic file (type png)
 <use ./figures//graph-gem-sale-prices.png>
-Package pdftex.def Info: ./figures//graph-gem-sale-prices.png  used on input line 174.
+Package pdftex.def Info: ./figures//graph-gem-sale-prices.png  used on input line 159.
 (pdftex.def)             Requested size: 341.43306pt x 208.37466pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3]
+ [3 <./figures//graph-gem-sale-prices.png>]
+<./figures//auction-house-after.png, id=293, 803.0pt x 858.20625pt>
+File: ./figures//auction-house-after.png Graphic file (type png)
+<use ./figures//auction-house-after.png>
+Package pdftex.def Info: ./figures//auction-house-after.png  used on input line 197.
+(pdftex.def)             Requested size: 200.74951pt x 214.55104pt.
 <./figures//auction-house-before.png, id=294, 1676.2625pt x 858.20625pt>
 File: ./figures//auction-house-before.png Graphic file (type png)
 <use ./figures//auction-house-before.png>
-Package pdftex.def Info: ./figures//auction-house-before.png  used on input line 197.
+Package pdftex.def Info: ./figures//auction-house-before.png  used on input line 204.
 (pdftex.def)             Requested size: 341.43306pt x 174.79414pt.
-<./figures//auction-house-after.png, id=301, 803.0pt x 858.20625pt>
-File: ./figures//auction-house-after.png Graphic file (type png)
-<use ./figures//auction-house-after.png>
-Package pdftex.def Info: ./figures//auction-house-after.png  used on input line 215.
-(pdftex.def)             Requested size: 200.74951pt x 214.55104pt.
- [4 <./figures//graph-gem-sale-prices.png> <./figures//auction-house-before.png (PNG copy)>] [5 <./figures//auction-house-after.png (PNG copy)>]
-<./figures//graph-gem-datasize.png, id=339, 905.3825pt x 552.56438pt>
+ [4 <./figures//auction-house-after.png (PNG copy)>]
+<./figures//graph-gem-datasize.png, id=322, 905.3825pt x 552.56438pt>
 File: ./figures//graph-gem-datasize.png Graphic file (type png)
 <use ./figures//graph-gem-datasize.png>
-Package pdftex.def Info: ./figures//graph-gem-datasize.png  used on input line 265.
+Package pdftex.def Info: ./figures//graph-gem-datasize.png  used on input line 254.
 (pdftex.def)             Requested size: 341.43306pt x 208.37466pt.
-<./figures//graph-anomalies-per-algorithm.png, id=341, 905.3825pt x 552.56438pt>
+<./figures//graph-anomalies-per-algorithm.png, id=324, 905.3825pt x 552.56438pt>
 File: ./figures//graph-anomalies-per-algorithm.png Graphic file (type png)
 <use ./figures//graph-anomalies-per-algorithm.png>
-Package pdftex.def Info: ./figures//graph-anomalies-per-algorithm.png  used on input line 272.
+Package pdftex.def Info: ./figures//graph-anomalies-per-algorithm.png  used on input line 261.
 (pdftex.def)             Requested size: 341.43306pt x 208.37466pt.
-<./figures//graph-compute-time-per-algorithm.png, id=343, 905.3825pt x 552.56438pt>
+<./figures//graph-compute-time-per-algorithm.png, id=326, 905.3825pt x 552.56438pt>
 File: ./figures//graph-compute-time-per-algorithm.png Graphic file (type png)
 <use ./figures//graph-compute-time-per-algorithm.png>
-Package pdftex.def Info: ./figures//graph-compute-time-per-algorithm.png  used on input line 279.
+Package pdftex.def Info: ./figures//graph-compute-time-per-algorithm.png  used on input line 268.
 (pdftex.def)             Requested size: 341.43306pt x 208.37466pt.
+ [5 <./figures//auction-house-before.png (PNG copy)>]
+Underfull \vbox (badness 5316) has occurred while \output is active []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2818) in paragraph at lines 290--290
+ [6 <./figures//graph-gem-datasize.png (PNG copy)> <./figures//graph-anomalies-per-algorithm.png>]
+Underfull \hbox (badness 2818) in paragraph at lines 291--291
 []\OT1/ptm/m/n/10 Mohiuddin Ahmed, Ab-dun Naser Mah-mood, and
  []
 
-[6 <./figures//graph-gem-datasize.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 289.
- (C:\Users\Hayley\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 290.
+(C:\Users\Hayley\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 2875) in paragraph at lines 290--290
+Underfull \hbox (badness 2875) in paragraph at lines 291--291
 []\OT1/ptm/m/n/10 Hilmi E Egilmez and An-to-nio Or-tega. ``Spec-tral
  []
 
-[7 <./figures//graph-anomalies-per-algorithm.png> <./figures//graph-compute-time-per-algorithm.png>]
-Underfull \hbox (badness 1460) in paragraph at lines 290--290
+[7 <./figures//graph-compute-time-per-algorithm.png>]
+Underfull \hbox (badness 1460) in paragraph at lines 291--291
 \OT1/ptm/m/n/10 downloads / research[]integrity[]and[]ethics[]policy[]for[]
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 290--290
+Underfull \hbox (badness 1859) in paragraph at lines 291--291
 []\OT1/ptm/m/n/10 Praveen Ku-mar Sadi-neni. \OT1/ptm/m/it/10 De-tec-tion of Fraud-u-lent
  []
 
@@ -766,7 +761,7 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 ) (C:\Users\Hayley\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 318.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 319.
  (d:/1902055-comp3xx-dissertation\algorithms/r/gem-datasize.R
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 10.
  (C:\Users\Hayley\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
@@ -797,13 +792,13 @@ Package logreq Info: Writing requests to 'dissertation-1902055.run.xml'.
 Here is how much of TeX's memory you used:
  18828 strings out of 480257
  325921 string characters out of 2880965
- 2066299 words of memory out of 3000000
+ 2066291 words of memory out of 3000000
  34565 multiletter control sequences out of 15000+200000
  577570 words of font info for 110 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  60i,8n,67p,1705b,2181s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Hayley/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on d:/1902055-comp3xx-dissertation\dissertation-1902055.pdf (13 pages, 1425700 bytes).
+Output written on d:/1902055-comp3xx-dissertation\dissertation-1902055.pdf (13 pages, 1425809 bytes).
 PDF statistics:
  991 PDF objects out of 1000 (max. 8388607)
  506 named destinations out of 1000 (max. 500000)

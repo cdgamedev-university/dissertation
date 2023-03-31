@@ -154,6 +154,13 @@ Hypothesis: Due to the fact that the dataset used cannot be labelled, it will be
 \noindent
 Data Source: The number of anomalous transactions found by each algorithm.
 
+\begin{figure*}[b]
+    \centering
+    \includegraphics[width=12cm]{graph-gem-sale-prices.png}
+    \caption{Box plot showing the price variation of each gem ID. R shown in Figure \ref{algorithm:r-gem-sale-price}}
+    \label{graph:gem-sale-price}
+\end{figure*}
+
 \section{Computing Artefact}
 \subsection{Game Background}
 \noindent For this research, the primary focus will be on Smilegate and Amazon Games' Fantasy MMORPG; Lost Ark\cite{LostArk2019} with a specific focus on its Gem system. Gems are collected by players during gameplay and can be sold to others using the in-game marketplace. Each Gem has different attributes, such as, Level, Name, Tier, Gem Effect, Sale Price and Sale Date.
@@ -169,12 +176,6 @@ Data Source: The number of anomalous transactions found by each algorithm.
 For this research, an anomaly detection algorithm would utilize 4 factors; Level, Tier, Sale Price and Sale Date. This should be enough for a basis to detect prices which are too high at any given time. It also allows us to investigate fluctuations in price of gems over time which could be due to various factors in the game, such as events which inflate the number of gems within the game through increased drop rates of gems, gem giveaways or a change in the number of players which leads to less supply/demand.
 
 Whilst looking at gem data, the average price per gem can be seen in Figure \ref{graph:gem-sale-price}. This graph also shows the upper and lower bounds for gem sale price.
-\begin{figure*}[!h]
-    \centering
-    \includegraphics[width=12cm]{graph-gem-sale-prices.png}
-    \caption{Box plot showing the price variation of each gem ID. R shown in Figure \ref{algorithm:r-gem-sale-price}}
-    \label{graph:gem-sale-price}
-\end{figure*}
 
 \subsection{Detection Algorithms}
 For this paper, 4 different algorithms were written which can detect anomalies. These revolve around checking each data point and if the deviance of that data point is within a specific range. All results from these algorithms, use a constant threshold which scales to the remaining dataset. This initial threshold has not been tailored per algorithm.
@@ -191,14 +192,21 @@ Figure \ref{algorithm:sd-mean} showcases a function for standard deviaion around
 \subsubsection{Median Standard Deviation Algorithm}
 Figure \ref{algorithm:sd-median} showcases a function for standard deviaion around the median. This is a common approach and checks if all datapoints are in range. If they are outside of the range, they are added to the anomalies array and the anomalies array is returned after the function is finished.
 
-\section{Data Collection Methodology}
-\begin{figure*}[!htbp]
+\begin{figure}[!b]
+    \centering
+    \includegraphics[scale=0.25]{auction-house-after}
+    \caption{Auction house screenshot after image processing.}
+    \label{figure:auction-house-after}
+\end{figure}
+
+\begin{figure*}[!t]
     \centering
     \includegraphics[width=12cm]{auction-house-before.png}
     \caption{Auction house screenshot before image processing.}
     \label{figure:auction-house-before}
 \end{figure*}
 
+\section{Data Collection Methodology}
 \subsection{Internal Data}
 \noindent The best method of gathering data, is to contact the developers directly. The developer's internal policy could impact the ability to get the raw data from them directly. They may log a lot more data than is publicly accessible via the marketplace, for example, the internal data could contain account identifying information.
 
@@ -209,13 +217,6 @@ Figure \ref{algorithm:sd-median} showcases a function for standard deviaion arou
 \noindent Another method for data collection surrounds screenshotting pages from the Sale History of Gems from Lost Ark's Marketplace, as seen in Figure \ref{figure:auction-house-before}. Then, the screenshot is cropped to remove the Gem Name, Starting Bid and Quality fields and converted to a greyscale image along with other image manipulation techniques to ensure clear text, shown in Figure \ref{figure:auction-house-after} (the algorithm which produces this processed image is shown in Figure \ref{algorithm:image-formatter}).
 
 Optical character recognition (OCR) is then used on the image and checked automatically for any errors (see Figure \ref{algorithm:image-processor}). The data can then be randomly sampled and manually reviewed to ensure the accuracy of the data following this process. Due to the nature in which this algorithm works, unreadable data will be logged in the saved file as a "-" alongside its page and entry numbers, making the issue much quicker to rectify.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.25]{auction-house-after}
-    \caption{Auction house screenshot after image processing.}
-    \label{figure:auction-house-after}
-\end{figure}
 
 Removing the name is done as this has no bearing on the price of a gem. Removing the Starting Bid field is done because the Starting Bid is optional when adding a gem to the marketplace, it is also not indicative of RMT. Instead, for the RMT transaction to occur correctly, Gems have a Buy Now Price set to a specific value. Removing the Quality field is done since gems don't have a quality value; this is always "-".
 
@@ -248,6 +249,27 @@ There is also a concern that as this is to do with a form of financial data, tha
 \noindent Professionally, it's important that this paper follows the BCS Code of Conduct\cite{BCSCodeOfConduct2022}. This includes working for the public interest by outlining solutions to current problems rather than ways to make current problems worse.
 
 \section{Results and Analysis}
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=12cm]{graph-gem-datasize.png}
+    \caption{Bar chart showing the number of gems recorded for each gem ID. R shown in Figure \ref{algorithm:r-gem-datasize}}
+    \label{graph:gem-datasize}
+\end{figure*}
+
+\begin{figure*}[b]
+    \centering
+    \includegraphics[width=12cm]{graph-anomalies-per-algorithm.png}
+    \caption{Bar chart showing the percentage of anomalies found for each gem depending upon the algorithm. R shown in Figure \ref{algorithm:r-anomalies-per-algorithm}}
+    \label{graph:anomalies-per-algorithm}
+\end{figure*}
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=12cm]{graph-compute-time-per-algorithm.png}
+    \caption{Bar chart showing the average computation time per 1000 gems for each algorithm (lower is better). R shown in Figure \ref{algorithm:r-time-taken-per-element}}
+    \label{graph:time-taken-per-algorithm}
+\end{figure*}
+
 \noindent The data shown has a GemID. This GemID coincides with two metrics each gem has, Tier and Level. Tier is represented via a T2 or T3 at the beginning of the ID and Level is represeted by L01-L10 at the end of the ID. This means that a Tier 2 Level 7 gem would be represented as T2L07 and a Tier 3 Level 10 gem would be T3L10. 
 
 The data shown in Figure \ref{graph:gem-datasize} showcases the total size of the data for each gem type sold. There is a stark drop off in the sample size for T2L08-T2L10 gems. This will be due to Tier 2 being replaced by Tier 3 through game progression. In my personal experience, this was around the time I started needing T2L08 gems, explaining the lack of these types of gems. There is also a drop off related to T3L09 and T3L10 gems which could be attributed to their difficulty to gather as they don't drop naturally and must be created by merging 3x T3L08 and 3x T3L09 gems respectively.
@@ -259,27 +281,6 @@ The Median SD algorithm used detected anomalies a comparitably large proportion 
 Figure \ref{graph:time-taken-per-algorithm} shows that overall, CleverSD is extremely slow when compared to the other three algorithms. This is unperformant, especially when considering the data in Figure \ref{graph:anomalies-per-algorithm} where CleverSD and 2T both found the same amount of anomalies for each Gem ID.
 
 Overall, these graphs help highlight that CleverSD and 2T both itentified a nearly identical number of anomalous data points, suggesting that the two algorithms work very similarly. However, this doesn't guarentee accuracy and could be down to over-reporting of anomalous findings, especially when compared with SD Mean and SD Median. On average, SD Median found more anomalous data points than SD Mean, which could highlight how the data is skewed especially when looking at the sale prices shown in Figure \ref{graph:gem-sale-price}. Overall, its difficult to assess accuracy due to the lack of a labelled dataset.
-
-\begin{figure*}[!htbp]
-    \centering
-    \includegraphics[width=12cm]{graph-gem-datasize.png}
-    \caption{Bar chart showing the number of gems recorded for each gem ID. R shown in Figure \ref{algorithm:r-gem-datasize}}
-    \label{graph:gem-datasize}
-\end{figure*}
-
-\begin{figure*}[!htbp]
-    \centering
-    \includegraphics[width=12cm]{graph-anomalies-per-algorithm.png}
-    \caption{Bar chart showing the percentage of anomalies found for each gem depending upon the algorithm. R shown in Figure \ref{algorithm:r-anomalies-per-algorithm}}
-    \label{graph:anomalies-per-algorithm}
-\end{figure*}
-
-\begin{figure*}[!htbp]
-    \centering
-    \includegraphics[width=12cm]{graph-compute-time-per-algorithm.png}
-    \caption{Bar chart showing the average computation time per 1000 gems for each algorithm (lower is better). R shown in Figure \ref{algorithm:r-time-taken-per-element}}
-    \label{graph:time-taken-per-algorithm}
-\end{figure*}
 
 \section{Disccussion}
 \noindent Looking at the data generated, it is clear that the hypotheses were along the right lines, but didn't paint the full picture. For the first research question, "Which anomaly detection algorithm is the most performant for peer-to-peer transactions within MMOs?" its clear than CleverSD was a huge way off in its computational time, performing the slowest by a substantial margin. The Mean SD was the quickest, beating out the Median SD algorithms, due to the lack of recursion.
