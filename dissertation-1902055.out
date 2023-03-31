@@ -11,7 +11,7 @@
 \BOOKMARK [1][-]{section.3}{Research Questions}{}% 11
 \BOOKMARK [1][-]{section.4}{Hypotheses}{}% 12
 \BOOKMARK [2][-]{subsection.4.1}{Which anomaly detection algorithm is the most performant for peer-to-peer transactions within MMOs?}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.2}{Can most fraudulent transactions be found using anomaly detection algorithms?}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Which algorithm will detect the most anomalous data points?}{section.4}% 14
 \BOOKMARK [1][-]{section.5}{Computing Artefact}{}% 15
 \BOOKMARK [2][-]{subsection.5.1}{Game Background}{section.5}% 16
 \BOOKMARK [2][-]{subsection.5.2}{Detection Algorithms}{section.5}% 17
@@ -31,5 +31,13 @@
 \BOOKMARK [2][-]{subsection.8.3}{Professional}{section.8}% 31
 \BOOKMARK [1][-]{section.9}{Results and Analysis}{}% 32
 \BOOKMARK [1][-]{section.10}{Disccussion}{}% 33
-\BOOKMARK [1][-]{section.11}{References Section}{}% 34
-\BOOKMARK [1][-]{section*.2}{Appendix A: Data Collection Code Samples}{}% 35
+\BOOKMARK [1][-]{section*.2}{Appendix A: Acknowledgements}{}% 34
+\BOOKMARK [1][-]{section*.3}{Appendix A: Reflective Addendum}{}% 35
+\BOOKMARK [2][-]{subsection.Appendix.A.1}{Change the dataset}{section*.3}% 36
+\BOOKMARK [2][-]{subsection.Appendix.A.2}{Look at different algorithms}{section*.3}% 37
+\BOOKMARK [2][-]{subsection.Appendix.A.3}{Overall dislike of academic writing}{section*.3}% 38
+\BOOKMARK [2][-]{subsection.Appendix.A.4}{Conclusion}{section*.3}% 39
+\BOOKMARK [1][-]{section*.4}{Appendix B: Statistics Addendum}{}% 40
+\BOOKMARK [1][-]{section*.5}{Appendix C: Testing Addendum}{}% 41
+\BOOKMARK [1][-]{section*.6}{Appendix D: Data Collection Code Samples}{}% 42
+\BOOKMARK [1][-]{section*.7}{Appendix E: Anomaly Detection Algorithms}{}% 43

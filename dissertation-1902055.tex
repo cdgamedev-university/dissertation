@@ -1,23 +1,23 @@
 \documentclass[journal]{IEEEtran}
-\usepackage{amsmath,amsfonts}
 \usepackage{algorithmic}
-\usepackage{xcolor}
+\usepackage{amsmath,amsfonts}
 \usepackage{array}
-\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
-\usepackage{textcomp}
-\usepackage{stfloats}
-\usepackage{url}
-\usepackage{verbatim}
+\usepackage{balance}
+\usepackage{biblatex}
+\usepackage{float}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
 \graphicspath{{./figures/}}
 \hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-\usepackage{balance}
-\usepackage{biblatex}
-\usepackage{listings}
-\usepackage{float}
-\usepackage{hyperref}
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\usepackage{stfloats}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{xcolor}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -56,7 +56,7 @@
 \footnote{Source \LaTeX is available on Falmouth GitHub: \url{https://github.falmouth.ac.uk/Games-Academy-Student-Work-22-23/1902055-comp3xx-dissertation}}
 
 \begin{abstract}
-Massively Multiplayer Online games are a hugely popular and successful subsection of the gaming industry. These games allow players to trade items within the game, but some players choose to buy and sell in-game items for real-world money, known as Real Money Trading. This leads to people preferring to buy from illicit sources rather than through the game itself, resulting in a loss of revenue for the developers. Additionally, this practice enables people to make money through methods such as botting, account theft, or cheating.
+Massively Multiplayer Online games are a hugely popular and successful genre within the gaming industry. These games allow players to trade items within the game, but some players choose to buy and sell in-game items for real-world money, known as Real Money Trading. This leads to people preferring to buy from illicit sources rather than through the game itself, resulting in a loss of revenue for the developers. Additionally, this practice enables people to make money through methods such as botting, account theft, or cheating.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -134,17 +134,25 @@ Similarly, Misra and Sadineni investigate the use of anomaly detection within Cr
 \noindent The questions this paper sets out to answer are:
 \begin{itemize}
     \item Which anomaly detection algorithm is the most performant for peer-to-peer transactions within MMOs?
-    \item Can most fraudulent transactions be found using anomaly detection algorithms?
+    \item Which algorithm will detect the most anomalous data points?
 \end{itemize}
 
 By answering these, game developers working on MMO titles can easily identify and choose a method that suits the needs for their game. This will help reduce the revenue loss caused by RMT which could be millions\cite{Dibbell2007}.
 
 \section{Hypotheses}
 \subsection{Which anomaly detection algorithm is the most performant for peer-to-peer transactions within MMOs?}
-\noindent Following research conducted, for data specifically from Lost Ark, a simple method which doesn't require training data is most likely to be best. The 2T algorithm\cite{Yang2019} could be beneficial for a dataset which has a small number of features as the data from Lost Ark requires only 2 features, a more complex algorithm likely isn't required.
+\noindent
+Hypothesis: Following research conducted, for data specifically from Lost Ark, a simple method which doesn't require training data is most likely to be best. The 2T algorithm\cite{Yang2019} could be beneficial for a dataset which has a small number of features as the data from Lost Ark requires only 2 features, a more complex algorithm likely isn't required.
 
-\subsection{Can most fraudulent transactions be found using anomaly detection algorithms?}
-\noindent Due to the fact that the dataset used cannot be labelled, it will be difficult to quantify if the algorithms function to detect all fraudulent transactions in the dataset. If a data point is out of range then the algorithm, assuming the correct settings, will be able to correctly identify all anomalous transactions. However, not all fraudulent transactions are anomalous and therefore, legitimate transactions could be detected as fraudulent. RMTers could also realise that selling a 5 Gold Gem for 100,000 Gold is unreasonable, and therefore they can adapt strategies and sell thousands of Gems for 8 or 9 Gold and still profit substatially.
+\noindent
+Data Source: The average compute time of each algorithm compared.
+
+\subsection{Which algorithm will detect the most anomalous data points?}
+\noindent
+Hypothesis: Due to the fact that the dataset used cannot be labelled, it will be difficult to quantify if the algorithms function to detect all fraudulent transactions in the dataset. Instead by looking at the quantity, rather than quality, we can assess if an algorithm successfully identifies more or less anomalous transactions than another algorithm. I believe that CleverSD will find the most anomalous transactions due to it processing the data recursively.
+
+\noindent
+Data Source: The number of anomalous transactions found by each algorithm.
 
 \section{Computing Artefact}
 \subsection{Game Background}
@@ -159,6 +167,14 @@ By answering these, game developers working on MMO titles can easily identify an
 \end{itemize}
 
 For this research, an anomaly detection algorithm would utilize 4 factors; Level, Tier, Sale Price and Sale Date. This should be enough for a basis to detect prices which are too high at any given time. It also allows us to investigate fluctuations in price of gems over time which could be due to various factors in the game, such as events which inflate the number of gems within the game through increased drop rates of gems, gem giveaways or a change in the number of players which leads to less supply/demand.
+
+Whilst looking at gem data, the average price per gem can be seen in Figure \ref{graph:gem-sale-price}. This graph also shows the upper and lower bounds for gem sale price.
+\begin{figure*}[!h]
+    \centering
+    \includegraphics[width=12cm]{graph-gem-sale-prices.png}
+    \caption{Box plot showing the price variation of each gem ID. R shown in Figure \ref{algorithm:r-gem-sale-price}}
+    \label{graph:gem-sale-price}
+\end{figure*}
 
 \subsection{Detection Algorithms}
 For this paper, 4 different algorithms were written which can detect anomalies. These revolve around checking each data point and if the deviance of that data point is within a specific range. All results from these algorithms, use a constant threshold which scales to the remaining dataset. This initial threshold has not been tailored per algorithm.
@@ -178,11 +194,10 @@ Figure \ref{algorithm:sd-median} showcases a function for standard deviaion arou
 \section{Data Collection Methodology}
 \begin{figure*}[!htbp]
     \centering
-    \includegraphics[width=\textwidth]{figures/auction-house-before.png}
+    \includegraphics[width=12cm]{auction-house-before.png}
     \caption{Auction house screenshot before image processing.}
     \label{figure:auction-house-before}
 \end{figure*}
-NOTE: SOME DATA FOR 2022.11.03 IS MISSING DUE TO FILE CORRUPTION.
 
 \subsection{Internal Data}
 \noindent The best method of gathering data, is to contact the developers directly. The developer's internal policy could impact the ability to get the raw data from them directly. They may log a lot more data than is publicly accessible via the marketplace, for example, the internal data could contain account identifying information.
@@ -191,11 +206,11 @@ NOTE: SOME DATA FOR 2022.11.03 IS MISSING DUE TO FILE CORRUPTION.
 \noindent In Korea, a public resource exist which allows users to view trasactional data across the entire auction house\cite{LostArkStove2019}. However, this website is inaccessible without name and age verification, due Korea's Game Industry Promotion Act\cite{GIPA2020kr}.
 
 \subsection{In-game Data}
-\noindent Another method for data collection surrounds screenshotting pages from the Sale History of Gems from Lost Ark's Marketplace, as seen in Figure \ref{figure:auction-house-before}. Then, the screenshot is cropped to remove the Gem Name, Starting Bid and Quality fields and converted to a greyscale image along with other image manipulation techniques to ensure clear text, shown in Figure \ref{figure:auction-house-after} (see Figure \ref{algorithm:image-formatter}).
+\noindent Another method for data collection surrounds screenshotting pages from the Sale History of Gems from Lost Ark's Marketplace, as seen in Figure \ref{figure:auction-house-before}. Then, the screenshot is cropped to remove the Gem Name, Starting Bid and Quality fields and converted to a greyscale image along with other image manipulation techniques to ensure clear text, shown in Figure \ref{figure:auction-house-after} (the algorithm which produces this processed image is shown in Figure \ref{algorithm:image-formatter}).
 
 Optical character recognition (OCR) is then used on the image and checked automatically for any errors (see Figure \ref{algorithm:image-processor}). The data can then be randomly sampled and manually reviewed to ensure the accuracy of the data following this process. Due to the nature in which this algorithm works, unreadable data will be logged in the saved file as a "-" alongside its page and entry numbers, making the issue much quicker to rectify.
 
-\begin{figure}[H]
+\begin{figure}[ht]
     \centering
     \includegraphics[scale=0.25]{auction-house-after}
     \caption{Auction house screenshot after image processing.}
@@ -207,6 +222,8 @@ Removing the name is done as this has no bearing on the price of a gem. Removing
 A consideration which could also affect the price of Gems is the "Gem Effect". This is a specific ability that Gem does to impact a character's Damage or Cooldown Time on a specific move. However, the Gem Effect is optionally rerolled within the game player. Rerolling requires the use of Silver, a much easier resource to gather, so this doesn't have a huge impact on the price of the gem.
 
 Using this data, humans can easily recognise when a sale price for a specific level/tier gem is too high compared to other gems being sold at around the same time.
+
+Overall, after collecting data for the period 25th August 2022 until 29th December 2022*, a total of 14,928 gems were sold on the EU West market within Lost Ark and tracked for this paper (see Figure \ref{graph:gem-datasize}).
 
 \section{Validation and Verification}
 \noindent Without having a labelled dataset, it will be difficult to accurately verify anomalous transactions using an algorithm. However, by utilising different algorithms for the testing of data, it is possible to check overlapping anomalies between different algorithms. This will allow for the verification that a data point is anomalous.
@@ -225,87 +242,151 @@ This method, however, suffers from a problem where anomalies which aren't detect
 \subsection{Ethical}
 \noindent The data processed in the paper is gathered directly from Lost Ark's public marketplace where Smilegate likely already follow data anomyization practices\cite{Gruschka2018}. The data gathered doesn't contain identifiable information and therefore conforms to both General Data Protection Regulation (GDPR) and the Nuremberg Code\cite{Nuremberg1947}. As this papers research is carried out at Falmouth University, it also follows the Research Policy\cite{FalmouthEthicsPolicy2022}.
 
+There is also a concern that as this is to do with a form of financial data, that people may rely on RMT in order to make money in thier respective counties. This could pose an issue as the plan is not to ruin someone's livlihood. On the other hand, RMT is not allowed by the game and could be comparable to turning towards crime during hardship.
+
 \subsection{Professional}
 \noindent Professionally, it's important that this paper follows the BCS Code of Conduct\cite{BCSCodeOfConduct2022}. This includes working for the public interest by outlining solutions to current problems rather than ways to make current problems worse.
 
 \section{Results and Analysis}
-\noindent Figures \ref{graph:gem-datasize}, \ref{graph:anomalies-per-algorithm} and \ref{graph:time-taken-per-algorithm} showcase the results found from running the aforementioned algorithms, 2T, Clever SD, Mean SD and Median SD. In these graphs, Gem Number is used as a quick comparital measure between two merged properies each gem has. A Tier 2 Level 1 Gem is labelled as Gem Number 1 and a Tier 3 Level 1 Gem is labelled as Gem Number 11. Each gem tier has 10 levels, meaning, a Tier 2 Level 5 Gem is Gem Number 5 and a Tier 3 Level 5 Gem is Gem Number 15.
+\noindent The data shown has a GemID. This GemID coincides with two metrics each gem has, Tier and Level. Tier is represented via a T2 or T3 at the beginning of the ID and Level is represeted by L01-L10 at the end of the ID. This means that a Tier 2 Level 7 gem would be represented as T2L07 and a Tier 3 Level 10 gem would be T3L10. 
 
-The data in Figure \ref{graph:gem-datasize} showcases the total size of the datasets - or gems sold - throughout the period 25th August 2022 until 29th December 2022. Overall, 14928 transactions were recorded for this paper. The trends shown in this graph help quantify the data shown in \ref{graph:anomalies-per-algorithm}.
+The data shown in Figure \ref{graph:gem-datasize} showcases the total size of the data for each gem type sold. There is a stark drop off in the sample size for T2L08-T2L10 gems. This will be due to Tier 2 being replaced by Tier 3 through game progression. In my personal experience, this was around the time I started needing T2L08 gems, explaining the lack of these types of gems. There is also a drop off related to T3L09 and T3L10 gems which could be attributed to their difficulty to gather as they don't drop naturally and must be created by merging 3x T3L08 and 3x T3L09 gems respectively.
 
+Figure \ref{graph:anomalies-per-algorithm} showcases the proportion of anomalies found for each Gem ID. This data shows that T2L01 gems are likely used more often for fraudulent transactions. Due to thier low value in-game however, players typically spend 1 Gold each on them. Therefore, it is likely that the low cost gems were detected as anomalies by the 2T and CleverSD algorithms, this in and of itself could highlight how these gems being sold at vast range of prices actually increases their detection for these algorithms.
+The graph also shows a huge proportion of T2L05 being detected by the CleverSD and 2T algorithms. This could be attributed to fraudulent transactions.
+The Median SD algorithm used detected anomalies a comparitably large proportion of Level 10 gems; T2L10 and T3L10. For T3L10, this could be attributed to the high range in price for these gems as shown in Figure \ref{graph:gem-sale-price}. As for T2L10, this could be attributed to an insufficient data size when compared with other gems, as shown in Figure \ref{graph:gem-datasize}.
 
+Figure \ref{graph:time-taken-per-algorithm} shows that overall, CleverSD is extremely slow when compared to the other three algorithms. This is unperformant, especially when considering the data in Figure \ref{graph:anomalies-per-algorithm} where CleverSD and 2T both found the same amount of anomalies for each Gem ID.
 
-\begin{figure}[h]
+Overall, these graphs help highlight that CleverSD and 2T both itentified a nearly identical number of anomalous data points, suggesting that the two algorithms work very similarly. However, this doesn't guarentee accuracy and could be down to over-reporting of anomalous findings, especially when compared with SD Mean and SD Median. On average, SD Median found more anomalous data points than SD Mean, which could highlight how the data is skewed especially when looking at the sale prices shown in Figure \ref{graph:gem-sale-price}. Overall, its difficult to assess accuracy due to the lack of a labelled dataset.
+
+\begin{figure*}[!htbp]
     \centering
-    \includegraphics[scale=0.25]{figures/graph-gem-datasize.png}
-    \caption{Graph showing the dataset size for each gem type.}
+    \includegraphics[width=12cm]{graph-gem-datasize.png}
+    \caption{Bar chart showing the number of gems recorded for each gem ID. R shown in Figure \ref{algorithm:r-gem-datasize}}
     \label{graph:gem-datasize}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[h]
+\begin{figure*}[!htbp]
     \centering
-    \includegraphics[scale=0.25]{figures/graph-per-algorithm.png}
-    \caption{Graph showing the number of anomalies found for each gem depending upon the algorithm.}
+    \includegraphics[width=12cm]{graph-anomalies-per-algorithm.png}
+    \caption{Bar chart showing the percentage of anomalies found for each gem depending upon the algorithm. R shown in Figure \ref{algorithm:r-anomalies-per-algorithm}}
     \label{graph:anomalies-per-algorithm}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[h]
+\begin{figure*}[!htbp]
     \centering
-    \includegraphics[scale=0.25]{figures/graph-time-taken-per-element.png}
-    \caption{Graph showing the average computation time for different algorithms on each dataset.}
+    \includegraphics[width=12cm]{graph-compute-time-per-algorithm.png}
+    \caption{Bar chart showing the average computation time per 1000 gems for each algorithm (lower is better). R shown in Figure \ref{algorithm:r-time-taken-per-element}}
     \label{graph:time-taken-per-algorithm}
-\end{figure}
+\end{figure*}
 
 \section{Disccussion}
-\noindent [INSERT SECTION]
+\noindent Looking at the data generated, it is clear that the hypotheses were along the right lines, but didn't paint the full picture. For the first research question, "Which anomaly detection algorithm is the most performant for peer-to-peer transactions within MMOs?" its clear than CleverSD was a huge way off in its computational time, performing the slowest by a substantial margin. The Mean SD was the quickest, beating out the Median SD algorithms, due to the lack of recursion.
 
-\section{References Section}
+For Hypothesis 2, "Which algorithm will detect the most anomalous data points?", the data shows that CleverSD, alongside 2T, identified the most anomalous datapoints, however, this is due to the recursive nature of the algorithms when compared with Mean and Median SD. The lack of tuning the algorithms or the small datasets used could also factor into the detection.
+
 \printbibliography
-
-\clearpage
 \begin{appendices}
+    \begin{appendices}
+        \section{Acknowledgements}
+        \label{appendix:aknowledgements}
+        I would like to thank my supervisor John Speakman for support during this project. I would also like to thank Michael Scott for his work in creating this module, and his work towards improving the University as a whole. I'd also like to thank all my lecturers at Falmouth University who have supported my learning over the last 3 years, as well as their openness to change based on what the student body is after.
+    \end{appendices}
+
+    \begin{appendices}
+        \section{Reflective Addendum}
+        \label{appendix:reflection}
+        I am happy overall with the progress which I have made on this dissertation, however, it hasn't been without its issues and looking back, I would have done a lot differently if I was to start this project fresh.
+
+        \subsection{Change the dataset}
+        One of the major issues I have faced has been regarding the dataset used. When I started this project, I had been playing Lost Ark with friends for the prior couple of months and wanted to solve a problem that I felt had plagued the game. I did contact the developers, hoping I could access this data as part of my dissertation but I never recieved a response. Instead of going ahead with the data I gathered, it would have been a great idea to use an open and pre-labelled dataset from another game; these overall are difficult to come by and I wouldn't have the same connection and understanding of a different dataset.
+
+        \subsection{Look at different algorithms}
+        Another thing I would have liked to look into would have been other methods of anomaly detection. Originally this was the plan, but to help manage scope and not overwork myself for this project - and other committments I had - I chose to focus on a small subsection of algorithms, which focused solely around Standard Deviation. I would have liked to have Machine Learning or Autoencoders but this felt out of reach during the middle of the project.
+
+        \subsection{Overall dislike of academic writing}
+        One of my biggest issues with school in general, is academic writing. I don't enjoy writing essays - and I'm sure not many people do - but that has been a big blocker for me personally. It led to me developing my algorithms quite early, learning about OCR and detection algorithms without putting a huge amount of thought into this paper as a whole. It also led to me focusing on my other, more practical, modules or work experience through internships. The literature review was the only part I particularly found enjoyable as I found the academic reading to be interesting. This was due to me learning new things, something I enjoy doing.
+
+        \subsection{Conclusion}
+        Overall, I believe that the project has gone well, I feel happy and content with what I have produced. Whilst it could have been better, it also could have gone much worse. With a little more thought into time management and planning, I could have produced something better. 
+    \end{appendices}
+
+    \section{Statistics Addendum}
+    \label{appendix:statistics-addendum}
+
+    \lstinputlisting[language=r]{algorithms/r/gem-datasize.R}
+    \begin{figure}[hbt!]
+        \caption{R Code which displays the gem datasize graph shown in Figure \ref{graph:gem-datasize}.}
+        \label{algorithm:r-gem-datasize}
+    \end{figure}
+
+    \lstinputlisting[language=r]{algorithms/r/time-taken-per-element.R}
+    \begin{figure}[hbt!]
+        \caption{R Code which displays the average time taken per 100 elements graph shown in Figure \ref{graph:time-taken-per-algorithm}.}
+        \label{algorithm:r-time-taken-per-element}
+    \end{figure}
+
+    \lstinputlisting[language=r]{algorithms/r/anomalies-per-algorithm.R}
+    \begin{figure}[hbt!]
+        \caption{R Code which displays the graph showing number of anomalies generated from each algorithm in Figure \ref{graph:anomalies-per-algorithm}.}
+        \label{algorithm:r-anomalies-per-algorithm}
+    \end{figure}
+
+    \lstinputlisting[language=r]{algorithms/r/gem-sale-price.R}
+    \begin{figure}[hbt!]
+        \caption{R Code which displays the graph showing number of anomalies generated from each algorithm in Figure \ref{graph:gem-sale-price}.}
+        \label{algorithm:r-gem-sale-price}
+    \end{figure}
+
+    \section{Testing Addendum}
+    \label{appendix:testing-addendum}
+
     \section{Data Collection Code Samples}
     \label{appendix:collection-code}
     
-    \lstinputlisting[language=python]{algorithms/compare-algorithms.py}
+    \lstinputlisting[language=python]{algorithms/python/compare-algorithms.py}
     \begin{figure}[hbt!]
         \caption{Comparison Algorithm.}
         \label{algorithm:algorithm-comparison}
     \end{figure}
 
-    \lstinputlisting[language=python]{algorithms/clever_sd.py}
+    \lstinputlisting[language=python]{algorithms/python/clever_sd.py}
     \begin{figure}[hbt!]
         \caption{CleverSD Algorithm.}
         \label{algorithm:clever-sd}
     \end{figure}
+
+    \section{Anomaly Detection Algorithms}
+    \label{appendix:detection-code}
     
-    \lstinputlisting[language=python]{algorithms/twostage_sd.py}
+    \lstinputlisting[language=python]{algorithms/python/twostage_sd.py}
     \begin{figure}[hbt!]
         \caption{2T Algorithm.}
         \label{algorithm:2t}
     \end{figure}
     
-    \lstinputlisting[language=python]{algorithms/mean_sd.py}
+    \lstinputlisting[language=python]{algorithms/python/mean_sd.py}
     \begin{figure}[hbt!]
         \caption{Standard Deviation (Mean) Algorithm.}
         \label{algorithm:sd-mean}
     \end{figure}
     
-    \lstinputlisting[language=python]{algorithms/median_sd.py}
+    \lstinputlisting[language=python]{algorithms/python/median_sd.py}
     \begin{figure}[hbt!]
         \caption{Standard Deviation (Median) Algorithm.}
         \label{algorithm:sd-median}
     \end{figure}
 
-    \lstinputlisting[language=python]{algorithms/image-formatter.py}
+    \lstinputlisting[language=python]{algorithms/python/image-formatter.py}
     \begin{figure}[hbt!]
         \caption{Image Formatter Algorithm.}
         \label{algorithm:image-formatter}
     \end{figure}
 
-    \lstinputlisting[language=python]{algorithms/image-processor.py}
+    \lstinputlisting[language=python]{algorithms/python/image-processor.py}
     \begin{figure}[hbt!]
-        \caption{Image Processor Algorithm.}
+        \caption{Image Processing Algorithm.}
         \label{algorithm:image-processor}
     \end{figure}
 \end{appendices}
